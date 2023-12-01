@@ -222,6 +222,8 @@
 > Easteregg
 >
 > Handytax
+>
+> Christmastrees
 
 ## Anstehend
 <sup>Kommende Features / überarbeitungen</sup>
