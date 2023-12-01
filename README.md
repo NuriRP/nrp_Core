@@ -272,12 +272,15 @@
 > Sprache auf Deutsch ändern<sup>In Arbeit</sup>
 
 ## In Arbeit
+<sup>Diese Verbesserungen / Features sind bei dem nächsten Release dabei</sup>
 > Sprache auf Deutsch ändern
 
 ## Download
+<sup>Das Script ist **kostenlos**</sup>
 > [Download](https://github.com/NuriRP/nrp_Core/releases)
 
 ## Vorschau
+<sup>Vorschau aller enthaltenen Features</sup>
 > ***Bald verfügbar!***
 
 ## Installation
