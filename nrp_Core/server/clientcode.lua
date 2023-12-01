@@ -4608,6 +4608,28 @@ if NRP_Config.Coords then
         TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Du bist bei den Koordinaten: " .. playerCoords, 5000)
     end, false)
 end
+
+
+-----{ C H R I S T M A S T R E E S }-----
+if NRP_Config.Christmastrees then
+    local treeLocations = NRP_Config.ChristmastreesCoords
+
+    function spawnChristmasTree(location)
+        local treeModel = GetHashKey("prop_xmas_tree_int")
+        RequestModel(treeModel)
+    
+        while not HasModelLoaded(treeModel) do
+            Wait(500)
+        end
+    
+        local treeObject = CreateObject(treeModel, location.x, location.y, location.z, true, false, true)
+        SetEntityHeading(treeObject, 0.0)
+    end
+
+    for _, location in ipairs(treeLocations) do
+    spawnChristmasTree(location)
+    end
+end
     ]]
     TriggerClientEvent('nrp_Core:loadclient', _source, code)
 end)
