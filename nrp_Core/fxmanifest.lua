@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'Erson Pelmeni #1'
 description 'Core system based on ESX.'
-version '1.0.0'
+version '1.0.1'
 
 client_scripts {
     'config/config.lua',
