@@ -144,7 +144,7 @@ NRP_Config.VehicleRentalColorA = 100
 
 -----{ P M A - V O I C E   C I R C L E }-----
 NRP_Config.PMAVoiceCircle = true
-NRP_Config.PMAVoiceCircleTrigger = 'nrp_Voice:setTalkingMode'
+NRP_Config.PMAVoiceCircleTrigger = 'pma-voice:setTalkingMode'
 NRP_Config.PMAVoiceCircleDuration = 200
 NRP_Config.PMAVoiceCircleMarkerType = 1
 NRP_Config.PMAVoiceCircleMarkerHeight = 0.7
