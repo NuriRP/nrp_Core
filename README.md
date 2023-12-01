@@ -279,6 +279,14 @@
 <sup>Das Script ist **kostenlos**</sup>
 > [Download](https://github.com/NuriRP/nrp_Core/releases)
 
+## Vorraussetzungen
+<sup>Ohne den Unten genannten Vorraussetzungen funktioniert das Script garnicht / nicht richtig</sup>
+> Game Build **2944**
+>
+> [es_extended](https://github.com/esx-framework/esx_core)
+>
+> [pma-voice](https://github.com/AvarianKnight/pma-voice)
+
 ## Vorschau
 <sup>Vorschau aller enthaltenen Features</sup>
 > ***Bald verfügbar!***
