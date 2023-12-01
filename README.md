@@ -225,10 +225,67 @@
 
 ## Anstehend
 <sup>Kommende Features / überarbeitungen</sup>
-> ...
+> Panicbutton hinzufügen
+>
+> Weitere txAdmin Logs hinzufügen
+>
+> Killsound hinzufügen
+>
+> Blinker hinzufügen
+>
+> Spieler tacklen hinzufügen
+>
+> Carclear hinzufügen
+>
+> Einreise hinzufügen
+>
+> Weitere Minijobs hinzufügen
+>
+> Safezone Admin & Job bypass hinzufügen
+>
+> Waffenholster hinzufügen
+>
+> Gym hinzufügen
+>
+> Carlock hinzufügen
+>
+> Doorlock hinzufügen
+>
+> Bardwuchs hinzufügen
+>
+> /rob Command hinzufügen
+>
+> /givecar Command hinzufügen
+>
+> Realtime hinzufügen
+>
+> Weitere Config Einstellungen hinzufügen
+>
+> Discord Logs überarbeiten
+>
+> Easteregg überarbeiten
+>
+> Script optimieren
+>
+> Code verbessern
 
 ## Download
 > [Download](https://github.com/NuriRP/nrp_Core/releases)
 
+## Vorschau
+> ***Bald verfügbar!***
+
 ## Installation
-> ...
+> 1. Lade **nrp_Core** herunter und entpacke die **.zip** Datei.
+>
+> 2. Importiere den **nrp_Core** Ordner in dein FiveM Server Ressourcen Verzeichnis.
+>
+> 3. Importiere die **nrp_Core.sql** Datei in deine Datenbank.
+>
+> 4. Passe den **nrp_Core** in der **config.lua** & **webhookconfig.lua** an. Vergesse nicht die Trigger für die Benachrichtigung und Ankündigung in der **clientcode.lua** & **server.lua** einzusetzen
+
+## Fehler melden
+> Melde mir die Fehler [hier](https://github.com/NuriRP/nrp_Core/releases).
+
+## Verbesserungsvorschläge
+> Du hast eine Verbesserung oder ein neues Feature? Klicke [hier](https://github.com/NuriRP/nrp_Core/pulls).
