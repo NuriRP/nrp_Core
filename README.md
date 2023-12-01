@@ -259,6 +259,8 @@
 >
 > Realtime hinzufügen
 >
+> Feuerwerk hinzufügen
+>
 > Weitere Config Einstellungen hinzufügen
 >
 > Discord Logs überarbeiten
