@@ -2258,6 +2258,13 @@ NRP_Config.Coords = true
 NRP_Config.CoordsCommand = 'koordinaten'
 
 
+-----{ C H R I S T M A S T R E E S }-----
+NRP_Config.Christmastrees = true
+NRP_Config.ChristmastreesCoords = {
+    { x = 195.26, y = -933.81, z = 29.68 }
+}
+
+
 -----{ P R O G R E S S B A R }-----
 NRP_Config.Progressbar = function(time)
     TriggerEvent('nrp_progressbar:progress', time)
