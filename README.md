@@ -268,6 +268,8 @@
 > Script optimieren
 >
 > Code verbessern
+>
+> Sprache auf Deutsch ändern
 
 ## Download
 > [Download](https://github.com/NuriRP/nrp_Core/releases)
