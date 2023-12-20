@@ -1,3 +1,4 @@
+!(https://cdn.discordapp.com/attachments/849279335797489674/1187044820347269241/1.png?ex=659574a3&is=6582ffa3&hm=9e8161c02d70620533211a74d9ed91b3f0880371c887fc148ceaa35d3ee8c1b5&)
 # nrp_Core ***1.0.1***
 ### Core system based on ESX.
 
