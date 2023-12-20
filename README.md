@@ -280,11 +280,11 @@
 > Sprache auf Deutsch ändern
 
 ## Download
-<sup>Das Script ist **kostenlos**</sup>
+<sup>Die Ressource ist **kostenlos**</sup>
 > [Download](https://github.com/NuriRP/nrp_Core/releases)
 
 ## Vorraussetzungen
-<sup>Ohne den Unten genannten Vorraussetzungen funktioniert das Script garnicht / nicht richtig</sup>
+<sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht richtig</sup>
 > Game Build **2944**
 >
 > [es_extended](https://github.com/esx-framework/esx_core)
