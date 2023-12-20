@@ -1,6 +1,6 @@
 ![image](https://cdn.discordapp.com/attachments/849279335797489674/1187044820347269241/1.png?ex=659574a3&is=6582ffa3&hm=9e8161c02d70620533211a74d9ed91b3f0880371c887fc148ceaa35d3ee8c1b5&)
 # nrp_Core ***1.0.1***
-### Core system based on ESX.
+### Core System basierend auf ESX.
 
 ## Informationen
 <sup>Allgemeine Information der Ressource</sup>
@@ -277,7 +277,7 @@
 > Sprache auf Deutsch ändern<sup>In Arbeit</sup>
 
 ## In Arbeit
-<sup>Diese Verbesserungen / Features sind bei dem nächsten Release dabei</sup>
+<sup>Diese Features / Verbesserungen sind bei dem nächsten Release dabei</sup>
 > Sprache auf Deutsch ändern
 
 ## Download
@@ -285,7 +285,7 @@
 > [Download](https://github.com/NuriRP/nrp_Core/releases)
 
 ## Vorraussetzungen
-<sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht richtig</sup>
+<sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß</sup>
 > Game Build **2944**
 >
 > [es_extended](https://github.com/esx-framework/esx_core)
