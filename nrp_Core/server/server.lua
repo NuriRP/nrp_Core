@@ -16,7 +16,7 @@ end
 
 
 if NRP_Config.DebugGameBuildCheck then
-    local desiredBuild = 3095
+    local desiredBuild = 3095.
     local currentBuild = GetConvar("sv_enforceGameBuild", "0")
 
     if tonumber(currentBuild) < desiredBuild then
