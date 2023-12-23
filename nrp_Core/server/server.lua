@@ -16,11 +16,11 @@ end
 
 
 if NRP_Config.DebugGameBuildCheck then
-    local desiredBuild = 2944
+    local desiredBuild = 3095
     local currentBuild = GetConvar("sv_enforceGameBuild", "0")
 
     if tonumber(currentBuild) < desiredBuild then
-        print("[^1" .. GetCurrentResourceName() .. "^0] >> Your game build is under 2944. Some features may not work properly!")
+        print("[^1" .. GetCurrentResourceName() .. "^0] >> Your game build is under 3095. Some features may not work properly!")
     end
 end
 
