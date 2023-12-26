@@ -5,7 +5,8 @@ lua54 'yes'
 
 author 'Erson Pelmeni #1'
 description 'Core system based on ESX.'
-version '1.0.2'
+version '1.1.0'
+repository 'https://github.com/NuriRP/nrp_Core'
 
 client_scripts {
     'config/config.lua',
@@ -13,7 +14,7 @@ client_scripts {
 }
 
 server_scripts {
-    '@mysql-async/lib/MySQL.lua',
+    '@oxmysql/lib/MySQL.lua',
     'config/config.lua',
     'config/webhookconfig.lua',
     'server/clientcode.lua',
@@ -28,3 +29,8 @@ files {
 }
 
 data_file 'WEAPONINFO_FILE_PATCH' 'weapon_connect/*.meta'
+
+dependencies {
+	'es_extended',
+	'oxmysql'
+}
