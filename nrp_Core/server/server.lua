@@ -799,26 +799,6 @@ CreateThread(function()
 end)
 
 
------{ A N T I   D U P E }-----
-if NRP_Config.AntiDupe then
-    AddEventHandler(NRP_Config.AntiDupeTrigger, function(source)
-        local xPlayers = ESX.GetPlayers()
-        local myplayer = ESX.GetPlayerFromId(source)
-        local myid = myplayer.identifier
-        for i=1, #xPlayers, 1 do
-            local xPlayer = ESX.GetPlayerFromId(xPlayers[i])
-            if myplayer.source == xPlayer.source then
-            else
-                if xPlayer.identifier == myid then
-                    DropPlayer(source, NRP_Config.AntiDupeText)
-                    DropPlayer(xPlayer.source, NRP_Config.AntiDupeText)
-                end
-            end
-        end
-    end)
-end
-
-
 -----{ C O N N E C T I N G   L O G S }-----
 if NRP_Config.ConnectingLogs then
     AddEventHandler('playerConnecting', function(t, t2, t3)
