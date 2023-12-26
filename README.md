@@ -273,6 +273,8 @@
 > Blacklisted Commands hinzufügen
 > 
 > Booster System hinzufügen
+> 
+> Debug Prints hinzufügen
 >
 > Discord Logs überarbeiten
 >
