@@ -1369,3 +1369,43 @@ if NRP_Config.Vehicles then
         TriggerClientEvent("nrp_notify", source, "success", "Nuri Roleplay - Core", cars.." Auto(s) sind auf Nuri Roleplay!", 5000)
     end)
 end
+
+
+-----{ M A P   N A M E }-----
+if NRP_Config.MapName then
+    SetMapName(NRP_Config.MapNameText)
+end
+
+
+-----{ G A M E   T Y P E }-----
+if NRP_Config.GameType then
+    SetGameType(NRP_Config.GameTypeText)
+end
+
+
+-----{ I N D I C A T O R S }-----
+if NRP_Config.Indicators then
+    local playerIndicators = {source}
+
+    RegisterServerEvent('INDL')
+    RegisterServerEvent('INDR')
+
+    AddEventHandler('INDL', function(INDL)
+	    local netID = source
+	    TriggerClientEvent('updateIndicators', -1, netID, 'left', INDL)
+    end)
+
+    AddEventHandler('INDR', function(INDR)
+	    local netID = source
+	    TriggerClientEvent('updateIndicators', -1, netID, 'right', INDR)
+    end)
+end
+
+
+-----{ R E A L T I M E }-----
+if NRP_Config.Realtime then
+    RegisterNetEvent("nrp_Realtime:event")
+    AddEventHandler("nrp_Realtime:event", function()
+        TriggerClientEvent("nrp_Realtime:event", source, tonumber(os.date("%H")), tonumber(os.date("%M")), tonumber(os.date("%S")))
+    end)
+end
