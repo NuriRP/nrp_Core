@@ -320,7 +320,7 @@
 > 4. Passe den **nrp_Core** in der **config.lua** & **webhookconfig.lua** an. Vergesse nicht die Trigger für die Benachrichtigung und Ankündigung in der **clientcode.lua** & **server.lua** einzusetzen
 
 ## Fehler melden
-> Melde mir die Fehler [hier](https://github.com/NuriRP/nrp_Core/releases).
+> Melde mir die Fehler [hier](https://github.com/NuriRP/nrp_Core/issues).
 
 ## Verbesserungsvorschläge
 > Du hast eine Verbesserung oder ein neues Feature? Klicke [hier](https://github.com/NuriRP/nrp_Core/pulls).
