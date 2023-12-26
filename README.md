@@ -1,5 +1,5 @@
 ![image](https://cdn.discordapp.com/attachments/849279335797489674/1187044820347269241/1.png?ex=659574a3&is=6582ffa3&hm=9e8161c02d70620533211a74d9ed91b3f0880371c887fc148ceaa35d3ee8c1b5&)
-# nrp_Core ***1.0.1***<sup> Update 1.1.0 Bald Verfügbar</sup>
+# nrp_Core ***1.1.0***
 ### Core System basierend auf ESX.
 
 ## Informationen
@@ -188,8 +188,6 @@
 >
 > Kill notify
 >
-> Anti Dupe
->
 > Connecting Logs
 >
 > Disconnecting Logs
@@ -225,6 +223,16 @@
 > Handytax
 >
 > Christmastrees
+>
+> Autoaim
+>
+> Map Name
+>
+> Game Type
+>
+> Blinker
+>
+> Realtime
 
 ## Anstehend
 <sup>Kommende Features / überarbeitungen</sup>
@@ -233,8 +241,6 @@
 > Weitere txAdmin Logs hinzufügen
 >
 > Killsound hinzufügen
->
-> Blinker hinzufügen
 >
 > Spieler tacklen hinzufügen
 >
@@ -262,8 +268,6 @@
 >
 > /fulltune Befehl hinzufügen
 >
-> Realtime hinzufügen
->
 > Feuerwerk hinzufügen
 >
 > Weitere Config Einstellungen hinzufügen
@@ -287,7 +291,7 @@
 > Sprache auf Deutsch ändern<sup>In Arbeit</sup>
 
 ## In Arbeit
-<sup>Diese Features / Verbesserungen sind bei dem nächsten Release dabei</sup>
+<sup>Diese Features / Verbesserungen sind bei dem nächsten Release mit sehr hoher Warscheinlichkeit dabei</sup>
 > Sprache auf Deutsch ändern
 
 ## Download
