@@ -1,10 +1,10 @@
 ![image](https://cdn.discordapp.com/attachments/849279335797489674/1187044820347269241/1.png?ex=659574a3&is=6582ffa3&hm=9e8161c02d70620533211a74d9ed91b3f0880371c887fc148ceaa35d3ee8c1b5&)
-# nrp_Core ***1.0.1***<sup>1.1.0 Bald Verfügbar</sup>
+# nrp_Core ***1.0.1***<sup> Update 1.1.0 Bald Verfügbar</sup>
 ### Core System basierend auf ESX.
 
 ## Informationen
 <sup>Allgemeine Information der Ressource</sup>
-> Optimiert (Idle: 0.18 - 0.22ms)<sup>Abhängig aktivierter Funktionen</sup>
+> Optimiert (Idle: 0.18 - 0.22ms)<sup> Abhängig aktivierter Funktionen</sup>
 > 
 > Open-Source
 > 
