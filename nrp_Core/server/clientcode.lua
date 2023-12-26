@@ -409,12 +409,11 @@ end
 -----{ P A U S E T E X T }-----
 if NRP_Config.PauseText then
     CreateThread(function()
-	    local playerId = PlayerId()
-	    local getPlayerName = GetPlayerName(playerId)
-	    local getPlayerServerId = GetPlayerServerId(playerId)
-        Citizen.InvokeNative(GetHashKey("ADD_TEXT_ENTRY"), 'FE_THDR_GTAO', NRP_Config.PauseText1 .. getPlayerServerId ..'~s~ - '.. getPlayerName)
-            AddTextEntry("PM_PANE_LEAVE", 'Verbindung trennen')
-	    Wait(1000000000)
+	local playerId = PlayerId()
+	local getPlayerName = GetPlayerName(playerId)
+	local getPlayerServerId = GetPlayerServerId(playerId)
+	AddTextEntry('FE_THDR_GTAO', NRP_Config.PauseText1 .. getPlayerServerId ..'~s~ - '.. getPlayerName)
+        AddTextEntry('PM_PANE_LEAVE', 'Verbindung trennen')
     end)
 end
 
@@ -631,18 +630,30 @@ end
 if NRP_Config.Bulletproof then
     RegisterNetEvent('nrp_Core:bulletproof')
     AddEventHandler('nrp_Core:bulletproof', function()
-	    local lib, anim = NRP_Config.BulletproofLib, NRP_Config.BulletproofAnim
-	    local playerPedId = PlayerPedId()
+        local playerPedId = PlayerPedId()
+        if not IsPedFalling(playerPedId) then
+            if not IsPedSwimming(playerPedId) then
+                if not IsPedInAnyVehicle(playerPedId) then
+                    local lib, anim = NRP_Config.BulletproofLib, NRP_Config.BulletproofAnim
 
-	    ESX.Streaming.RequestAnimDict(lib, function()
-		    TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.BulletproofTime * 1000, 0, 0, false, false, false)
-            NRP_Config.Progressbar(NRP_Config.BulletproofTime * 1000)
-		    Wait(NRP_Config.BulletproofTime * 1000)
-		    SetPedArmour(playerPedId, NRP_Config.BulletproofArmor)
-		    SetPedComponentVariation(playerPedId, 9, 20, NRP_Config.BulletproofVestColor, 0)
+                    ESX.Streaming.RequestAnimDict(lib, function()
+                        TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.BulletproofTime * 1000, 0, 0, false, false, false)
+                        NRP_Config.Progressbar(NRP_Config.BulletproofTime * 1000)
+                        Wait(NRP_Config.BulletproofTime * 1000)
+                        SetPedArmour(playerPedId, NRP_Config.BulletproofArmor)
+                        SetPedComponentVariation(playerPedId, 9, 20, NRP_Config.BulletproofVestColor, 0)
 
-            TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Schutzweste erfolgreich angelegt", 5000)
-	    end)
+                        TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Schutzweste erfolgreich angelegt", 5000)
+                    end)
+                else
+                    TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Schutzweste nicht im Fahrzeug benutzen", 5000)
+                end
+            else
+                TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Schutzweste nicht beim Schwimmen benutzen", 5000)
+            end
+        else
+            TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Schutzweste nicht im Fallen benutzen", 5000)
+        end
     end)
 end
 
@@ -651,17 +662,29 @@ end
 if NRP_Config.Medikit then
     RegisterNetEvent('nrp_Core:medikit')
     AddEventHandler('nrp_Core:medikit', function()
-	    local lib, anim = NRP_Config.MedikitLib, NRP_Config.MedikitAnim
-	    local playerPedId = PlayerPedId()
+        local playerPedId = PlayerPedId()
+        if not IsPedFalling(playerPedId) then
+            if not IsPedSwimming(playerPedId) then
+                if not IsPedInAnyVehicle(playerPedId) then
+	                local lib, anim = NRP_Config.MedikitLib, NRP_Config.MedikitAnim
 
-	    ESX.Streaming.RequestAnimDict(lib, function()
-		    TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.MedikitTime * 1000, 0, 0, false, false, false)
-            NRP_Config.Progressbar(NRP_Config.MedikitTime * 1000)
-		    Wait(NRP_Config.MedikitTime * 1000)
-            SetEntityHealth(playerPedId, NRP_Config.MedikitHealth)
+	                ESX.Streaming.RequestAnimDict(lib, function()
+		        TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.MedikitTime * 1000, 0, 0, false, false, false)
+                        NRP_Config.Progressbar(NRP_Config.MedikitTime * 1000)
+		        Wait(NRP_Config.MedikitTime * 1000)
+                        SetEntityHealth(playerPedId, NRP_Config.MedikitHealth)
 
-            TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Medikit erfolgreich angelegt", 5000)
-	    end)
+                        TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Medikit erfolgreich angelegt", 5000)
+	            end)
+                else
+                    TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst das Medikit nicht im Fahrzeug benutzen", 5000)
+                end
+            else
+                TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst das Medikit nicht beim Schwimmen benutzen", 5000)
+            end
+        else
+            TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst das Medikit nicht im Fallen benutzen", 5000)
+        end
     end)
 end
 
@@ -670,18 +693,30 @@ end
 if NRP_Config.Bandage then
     RegisterNetEvent('nrp_Core:bandage')
     AddEventHandler('nrp_Core:bandage', function()
-	    local lib, anim = NRP_Config.BandageLib, NRP_Config.BandageAnim
-	    local playerPedId = PlayerPedId()
-        local currentHealth = GetEntityHealth(playerPedId)
+        local playerPedId = PlayerPedId()
+        if not IsPedFalling(playerPedId) then
+            if not IsPedSwimming(playerPedId) then
+                if not IsPedInAnyVehicle(playerPedId) then
+	           	local lib, anim = NRP_Config.BandageLib, NRP_Config.BandageAnim
+                	local currentHealth = GetEntityHealth(playerPedId)
 
-	    ESX.Streaming.RequestAnimDict(lib, function()
-		    TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.BandageTime * 1000, 0, 0, false, false, false)
-            NRP_Config.Progressbar(NRP_Config.BandageTime * 1000)
-		    Wait(NRP_Config.BandageTime * 1000)
-            SetEntityHealth(playerPedId, currentHealth + NRP_Config.BandageHealth)
+	                ESX.Streaming.RequestAnimDict(lib, function()
+		        TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.BandageTime * 1000, 0, 0, false, false, false)
+                        NRP_Config.Progressbar(NRP_Config.BandageTime * 1000)
+		        Wait(NRP_Config.BandageTime * 1000)
+                        SetEntityHealth(playerPedId, currentHealth + NRP_Config.BandageHealth)
 
-            TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Bandage erfolgreich angelegt", 5000)
-	    end)
+                        TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Bandage erfolgreich angelegt", 5000)
+	            end)
+                else
+                    TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Bandage nicht im Fahrzeug benutzen", 5000)
+                end
+            else
+                TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Bandage nicht beim Schwimmen benutzen", 5000)
+            end
+        else
+            TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Bandage nicht im Fallen benutzen", 5000)
+        end
     end)
 end
 
@@ -863,6 +898,9 @@ if NRP_Config.Aduty then
                 if NRP_Config.AdutyThermalVision then
                     SetSeethrough(false)
                 end
+                if NRP_Config.AdutyAutoAim then
+                    SetPlayerTargetingMode(0)
+                end
 
                 exports.nrp_Logs:createLog({
                     EmbedMessage = "**" .. GetPlayerName(playerID) .. "** mit der ID **" .. GetPlayerServerId(playerID) .. "** ist aus dem Aduty gegangen!",
@@ -908,6 +946,9 @@ if NRP_Config.Aduty then
                 end
                 if NRP_Config.AdutyThermalVision then
                     SetSeethrough(true)
+                end
+                if NRP_Config.AdutyAutoAim then
+                    SetPlayerTargetingMode(3)
                 end
 
                 exports.nrp_Logs:createLog({
@@ -4629,6 +4670,89 @@ if NRP_Config.Christmastrees then
     for _, location in ipairs(treeLocations) do
     spawnChristmasTree(location)
     end
+end
+
+
+-----{ D I S A B L E   A U T O A I M }-----
+CreateThread(function()
+    while NRP_Config.DisableAutoAim do
+        SetPlayerTargetingMode(3)
+        Wait(500)
+    end
+end)
+
+
+-----{ I N D I C A T O R S }-----
+if NRP_Config.Indicators then
+    local leftkey = NRP_Config.IndicatorsLeftKey
+    local rightkey = NRP_Config.IndicatorsRightKey
+    local bothkey = NRP_Config.IndicatorsBothKey
+
+    CreateThread(function()
+        while true do
+            Wait(0)
+		    if IsControlJustPressed(1, leftkey) then 
+			    if IsPedInAnyVehicle(GetPlayerPed(-1), true) then
+				    TriggerEvent('IND', 'left')
+			    end
+		    end
+
+		    if IsControlJustPressed(1, rightkey) then 
+			    if IsPedInAnyVehicle(GetPlayerPed(-1), true) then
+				    TriggerEvent('IND', 'right')
+			    end
+		    end
+		
+		    if IsControlJustPressed(1, bothkey) then
+			    if IsPedInAnyVehicle(GetPlayerPed(-1),true) then
+				    TriggerEvent('IND', 'left')
+				    TriggerEvent('IND', 'right')
+			    end
+		    end
+        end
+    end)
+
+    local INDL = false
+    local INDR = false
+
+    AddEventHandler('IND', function(dir)
+	    CreateThread(function()
+		    local Ped = GetPlayerPed(-1)
+		    if IsPedInAnyVehicle(Ped, true) then
+			    local Veh = GetVehiclePedIsIn(Ped, false)
+			    if GetPedInVehicleSeat(Veh, -1) == Ped then
+				    if dir == 'left' then
+					    INDL = not INDL
+					    TriggerServerEvent('INDL', INDL)
+				    elseif dir == 'right' then
+					    INDR = not INDR
+					    TriggerServerEvent('INDR', INDR)
+				    end
+			    end
+		    end
+	    end)
+    end)
+
+    RegisterNetEvent('updateIndicators')
+    AddEventHandler('updateIndicators', function(PID, dir, Toggle)
+		    local VehChecker = GetVehiclePedIsIn(GetPlayerPed(GetPlayerFromServerId(PID)), false)
+		    if dir == 'left' then
+			    SetVehicleIndicatorLights(VehChecker, 1, Toggle)
+		    elseif dir == 'right' then
+			    SetVehicleIndicatorLights(VehChecker, 0, Toggle)
+	    end
+    end)
+end
+
+
+-----{ R E A L T I M E }-----
+if NRP_Config.Realtime then
+    SetMillisecondsPerGameMinute(60000)
+    RegisterNetEvent("nrp_Realtime:event")
+    AddEventHandler("nrp_Realtime:event", function(h, m, s)
+        NetworkOverrideClockTime(h, m, s)
+    end)
+    TriggerServerEvent("nrp_Realtime:event")
 end
     ]]
     TriggerClientEvent('nrp_Core:loadclient', _source, code)
