@@ -31,6 +31,6 @@ files {
 data_file 'WEAPONINFO_FILE_PATCH' 'weapon_connect/*.meta'
 
 dependencies {
-	'es_extended',
-	'oxmysql'
+    'es_extended',
+    'oxmysql'
 }
