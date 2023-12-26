@@ -4484,57 +4484,6 @@ if NRP_Config.WeaponWhitelist then
 end
 
 
------{ A N T I   H E A L T H   H A C K }-----
-if NRP_Config.AntiHealthHack then
-    local playerPedId = PlayerPedId()
-    local playerHealth = GetEntityHealth(playerPedId)
-
-    if playerHealth > NRP_Config.AntiHealthHackMaxHealth then
-        DropPlayer(GetPlayerServerId(NetworkGetEntityOwner(playerPedId)), NRP_Config.AntiHealthHackMessage)
-    end
-end
-
-
------{ A N T I   S P E C T A T E }-----
-if NRP_Config.AntiSpectate then
-    local playerPedId = PlayerPedId()
-
-    if NetworkIsInSpectatorMode() then
-        DropPlayer(GetPlayerServerId(NetworkGetEntityOwner(playerPedId)), NRP_Config.AntiSpectateMessage)
-    end
-end
-
-
------{ A N T I   N I G H T   V I S I O N }-----
-if NRP_Config.AntiNightVison then
-    local playerPedId = PlayerPedId()
-
-    if GetUsingnightvision(true) and not IsPedInAnyHeli(playerPedId) then
-        DropPlayer(GetPlayerServerId(NetworkGetEntityOwner(playerPedId)), NRP_Config.AntiNightVisonMessage)
-    end
-end
-
-
------{ A N T I   T H E R M A L   V I S I O N }-----
-if NRP_Config.AntiThermalVison then
-    local playerPedId = PlayerPedId()
-
-    if GetUsingseethrough(true) and not IsPedInAnyHeli(playerPedId) then
-        DropPlayer(GetPlayerServerId(NetworkGetEntityOwner(playerPedId)), NRP_Config.AntiThermalVisonMessage)
-    end
-end
-
-
------{ A N T I   S U P E R J U M P }-----
-if NRP_Config.AntiSuperjump then
-    local playerPedId = PlayerPedId()
-
-    if IsPedJumping(playerPedId) then
-        DropPlayer(GetPlayerServerId(NetworkGetEntityOwner(playerPedId)), NRP_Config.AntiSuperjumpMessage)
-    end
-end
-
-
 -----{ A N T I   P I C K U P S }-----
 if NRP_Config.AntiPickups then
     local pickups = NRP_Config.AntiPickupsTypes
