@@ -269,6 +269,8 @@
 > Anti-Cheat funktionen (Anti NoClip, etc.) hinzufügen
 >
 > Blacklisted Commands hinzufügen
+> 
+> Booster System hinzufügen
 >
 > Discord Logs überarbeiten
 >
