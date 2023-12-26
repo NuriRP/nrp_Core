@@ -256,9 +256,11 @@
 >
 > Bardwuchs hinzufügen
 >
-> /rob Command hinzufügen
+> /rob Befehl hinzufügen
 >
-> /givecar Command hinzufügen
+> /givecar Befehl hinzufügen
+>
+> /fulltune Befehl hinzufügen
 >
 > Realtime hinzufügen
 >
