@@ -266,6 +266,10 @@
 >
 > Weitere Config Einstellungen hinzufügen
 >
+> Anti-Cheat funktionen (Anti NoClip, etc.) hinzufügen
+>
+> Blacklisted Commands hinzufügen
+>
 > Discord Logs überarbeiten
 >
 > Easteregg überarbeiten
