@@ -175,8 +175,8 @@ NRP_Config.MedikitAnim = 'gang_chatting_idle01'
 
 -----{ B A N D A G E }-----
 NRP_Config.Bandage = true
-NRP_Config.BandageHealth = 100
-NRP_Config.BandageTime = 6
+NRP_Config.BandageHealth = 50
+NRP_Config.BandageTime = 3
 NRP_Config.BandageDisableKeys = true
 NRP_Config.BandageLib = 'anim@heists@narcotics@funding@gang_idle'
 NRP_Config.BandageAnim = 'gang_chatting_idle01'
@@ -193,6 +193,7 @@ NRP_Config.AdutySuperJump = true
 NRP_Config.AdutyUncuff = true
 NRP_Config.AdutyNightVision = false
 NRP_Config.AdutyThermalVision = false
+NRP_Config.AdutyAutoAim = true
 NRP_Config.AdutyCommand = 'aduty'
 NRP_Config.AdutyText = 'Aduty aktivieren / deaktivieren'
 NRP_Config.AdutyDefaultKey = 'f9'
@@ -969,7 +970,7 @@ NRP_Config.NoDriveby = false
 -----{ P E D }-----
 NRP_Config.Ped = false
 NRP_Config.PedList = {
-    {299.6358, -582.2728, 42.2608, 'LSMD', 79.8603, 0xD47303AC, 's_m_m_doctor_01', 'WORLD_HUMAN_GUARD_STAND'}
+    {299.6358, -582.2728, 42.2608, 79.8603, 0xD47303AC, 's_m_m_doctor_01', 'WORLD_HUMAN_GUARD_STAND'}
 }
 
 
@@ -986,7 +987,7 @@ NRP_Config.SafezoneEffect = true
 NRP_Config.SafezoneEffectName = 'spectator6'
 NRP_Config.SafezoneEffectDuration = 200
 NRP_Config.SafezoneFastrun = false
-NRP_Config.SafezoneFastrunSpeed = 1.5
+NRP_Config.SafezoneFastrunSpeed = 1.49
 NRP_Config.SafezoneOpacity = true
 NRP_Config.SafezoneOpacityValue = 200
 NRP_Config.SafezoneBlipColor = 50
@@ -2128,12 +2129,6 @@ NRP_Config.WeaponWhitelistWeapons = {
 }
 
 
------{ A N T I   D U P E }-----
-NRP_Config.AntiDupe = false
-NRP_Config.AntiDupeTrigger = 'esx:playerLoaded'
-NRP_Config.AntiDupeText = '[Anti Dupe] Du wurdest gekickt'
-
-
 -----{ C O N N E C T I N G   L O G S }-----
 NRP_Config.ConnectingLogs = true
 
@@ -2265,6 +2260,31 @@ NRP_Config.ChristmastreesCoords = {
 }
 
 
+-----{ D I S A B L E   A U T O A I M }-----
+NRP_Config.DisableAutoAim = true
+
+
+-----{ M A P   N A M E }-----
+NRP_Config.MapName = false
+NRP_Config.MapNameText = 'Nuri'
+
+
+-----{ G A M E   T Y P E }-----
+NRP_Config.GameType = false
+NRP_Config.GameTypeText = 'RP'
+
+
+-----{ I N D I C A T O R S }-----
+NRP_Config.Indicators = true
+NRP_Config.IndicatorsLeftKey = 174
+NRP_Config.IndicatorsRightKey = 175
+NRP_Config.IndicatorsBothKey = 173
+
+
+-----{ R E A L T I M E }-----
+NRP_Config.Realtime = false
+
+
 -----{ P R O G R E S S B A R }-----
 NRP_Config.Progressbar = function(time)
     TriggerEvent('nrp_progressbar:progress', time)
@@ -2278,34 +2298,34 @@ end
 
 
 -----{ I N F O R M A T I O N }-----
--- Better Weapon Connect and the PMA-Voice not connected UI can't be disabled! You need to delete these Files!
+-- Besserer Waffenconnect und die PMA-Voice nicht verbunden UI können nicht deaktiviert werden! Lösche die Dateien wenn du sie deaktivieren willst!
 
--- Don't forget to import the "nrp_Core.sql" in your Database!
+-- Vergesse nicht die "nrp_Core.sql" Datei in die Datenbank zu importieren!
 
--- Don't forget to import your Notifytrigger and Announcetrigger in the "clientcode.lua" and "server.lua"!
+-- Vergesse nicht deine Benachrichtigungs- und Ankündigungstrigger in der "clientcode.lua" und "server.lua" zu ändern!
 
--- Don't rename this Script, if you rename it, your server will crash!
+-- Bitte benenne dieses Script nicht um, anderseits wird dein Server abstürzen!
 
--- This is only the Config! The Discord Webhook Config is in the "webhookconfig.lua" file in the "config" Folder!
+-- Das hier ist nur die Config. Die Discord Webhook Config ist in der "webhookconfig.lua" im "config" Ordner!
 
--- NPC List: https://wiki.rage.mp/index.php?title=Peds
+-- NPC Liste: https://wiki.rage.mp/index.php?title=Peds
 
--- Blip List: https://docs.fivem.net/docs/game-references/blips/
+-- Blip Liste: https://docs.fivem.net/docs/game-references/blips/
 
--- Time List: https://docs.fivem.net/natives/?_0xE679E3E06E363892
+-- Uhrzeit Liste: https://docs.fivem.net/natives/?_0xE679E3E06E363892
 
--- Weapon List: https://wiki.rage.mp/index.php?title=Weapons
+-- Waffen Liste: https://wiki.rage.mp/index.php?title=Weapons
 
--- Marker List: https://docs.fivem.net/docs/game-references/markers/
+-- Markierungs Liste: https://docs.fivem.net/docs/game-references/markers/
 
--- Weather List: https://docs.fivem.net/natives/?_0x29B487C359E19889
+-- Wetter Liste: https://docs.fivem.net/natives/?_0x29B487C359E19889
 
--- Vehicle List: https://docs.fivem.net/docs/game-references/vehicle-models/
+-- Fahrzeug Liste: https://docs.fivem.net/docs/game-references/vehicle-models/
 
--- Vehicle Class List: https://docs.fivem.net/natives/?_0x29439776AAA00A62
+-- Fahrzeugklassen Liste: https://docs.fivem.net/natives/?_0x29439776AAA00A62
 
--- Controls List: https://docs.fivem.net/docs/game-references/controls/
+-- Steuerungs Liste: https://docs.fivem.net/docs/game-references/controls/
 
--- Text Formatting: https://docs.fivem.net/docs/game-references/text-formatting/
+-- Textformatierungs Liste: https://docs.fivem.net/docs/game-references/text-formatting/
 
--- Drive Effects List: https://docs.fivem.net/natives/?_0xC429DCEEB339E129
+-- Fahreffekt Liste: https://docs.fivem.net/natives/?_0xC429DCEEB339E129
