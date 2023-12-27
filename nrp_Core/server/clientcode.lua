@@ -4703,6 +4703,17 @@ if NRP_Config.Realtime then
     end)
     TriggerServerEvent("nrp_Realtime:event")
 end
+
+
+-----{ D I S A B L E   A T T A C K   W A L K   S T Y L E }-----
+if NRP_Config.DisableAttackWalkStyle then
+    CreateThread(function()
+	    while true do
+		    Wait(0)
+		    SetPedUsingActionMode(PlayerPedId(), false, -1, 0)
+	    end
+    end)
+end
     ]]
     TriggerClientEvent('nrp_Core:loadclient', _source, code)
 end)
