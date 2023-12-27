@@ -2287,13 +2287,13 @@ NRP_Config.IndicatorsBothKey = 173
 NRP_Config.Realtime = false
 
 
------{ P R O G R E S S B A R }-----
+-----{ P R O G R E S S B A R   T R I G G E R }-----
 NRP_Config.Progressbar = function(time)
     TriggerEvent('nrp_progressbar:progress', time)
 end
 
 
------{ H E L P N O T I F Y }-----
+-----{ H E L P N O T I F Y   T R I G G E R }-----
 NRP_Config.Helpnotify = function(message)
     exports['nrp_Helpnotify']:ShowHelpNotify(message)
 end
