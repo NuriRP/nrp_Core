@@ -25,6 +25,50 @@ if NRP_Config.DebugGameBuildCheck then
 end
 
 
+if NRP_Config.DebugVersionsCheck then
+    function string:split( inSplitPattern, outResults )
+        if not outResults then
+            outResults = { }
+        end
+        local theStart = 1
+        local theSplitStart, theSplitEnd = string.find( self, inSplitPattern, theStart )
+        while theSplitStart do
+            table.insert( outResults, string.sub( self, theStart, theSplitStart-1 ) )
+            theStart = theSplitEnd + 1
+            theSplitStart, theSplitEnd = string.find( self, inSplitPattern, theStart )
+        end
+        table.insert( outResults, string.sub( self, theStart ) )
+        return outResults
+    end
+  
+    CreateThread(function()
+        local currentResourceName = GetCurrentResourceName();
+        local gitRepository = GetResourceMetadata(currentResourceName, "repository", 0);
+        local stringArray = gitRepository:split("/")
+        local gitName = stringArray[#(stringArray) - 1]
+        local repoName = stringArray[#(stringArray)]
+  
+        local resourceName = currentResourceName
+  
+        function checkVersion(err, responseText, headers)
+            local fxVersion = GetResourceMetadata(currentResourceName, "version", 0);
+            local gitLatest = json.decode(responseText);
+  
+            if fxVersion ~= gitLatest.tag_name then
+                print("" .. resourceName .. " ist nicht aktuell!\nNeuste Version: " .. gitLatest.tag_name .. "\nAktuelle Version: " .. fxVersion .. "\nBitte lade dir die neuste version herunter: " .. gitRepository .. "/releases")
+            end
+        end
+  
+        PerformHttpRequest("https://api.github.com/repos/" .. gitName  .. "/" .. repoName .. "/releases/latest", checkVersion, "GET")
+    end)
+end
+
+
+if NRP_Config.DebugConvar then
+    SetConvar('nrp_Core', 'Made by Erson Pelmeni #1')
+end
+
+
 -----{ E S X }-----
 ESX = exports[NRP_Config.ESXName]:getSharedObject()
 
