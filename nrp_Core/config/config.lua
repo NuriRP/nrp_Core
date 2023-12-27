@@ -2300,7 +2300,7 @@ end
 
 
 -----{ I N F O R M A T I O N }-----
--- Besserer Waffenconnect und die PMA-Voice nicht verbunden UI können nicht deaktiviert werden! Lösche die Dateien wenn du sie deaktivieren willst!
+-- Besserer Waffenconnect und die PMA-Voice nicht verbunden UI können nicht deaktiviert werden! Lösche die Dateien wenn du sie nicht verwenden willst!
 
 -- Vergesse nicht die "nrp_Core.sql" Datei in die Datenbank zu importieren!
 
