@@ -2,9 +2,11 @@ NRP_Config = {}
 
 
 -----{ D E B U G }-----
-NRP_Config.DebugPrintStartMessage = false
-NRP_Config.DebugNameCheck = false
-NRP_Config.DebugGameBuildCheck = false
+NRP_Config.DebugPrintStartMessage = true
+NRP_Config.DebugNameCheck = true
+NRP_Config.DebugGameBuildCheck = true
+NRP_Config.DebugVersionsCheck = true
+NRP_Config.DebugConvar = true
 
 
 -----{ E S X }-----
