@@ -22,7 +22,7 @@
 
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
-> Debugging Features (Start nachricht, Namensüberprüfung, Gamebuild Check, Versions Check & Convar)
+> Debugging Features (Startnachricht, Namensüberprüfung, Gamebuild Check, Versions Check & Convar)
 > 
 > Headshot Oneshot
 >
