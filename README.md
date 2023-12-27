@@ -290,7 +290,7 @@
 >
 > Code verbessern
 >
-> Sprache auf Deutsch ändern<sup>In Arbeit</sup>
+> Sprache auf Deutsch ändern<sup> In Arbeit</sup>
 
 ## In Arbeit
 <sup>Diese Features / Verbesserungen sind bei dem nächsten Release mit sehr hoher Warscheinlichkeit dabei</sup>
