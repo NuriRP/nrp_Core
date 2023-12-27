@@ -2287,6 +2287,10 @@ NRP_Config.IndicatorsBothKey = 173
 NRP_Config.Realtime = false
 
 
+-----{ D I S A B L E   A T T A C K   W A L K   S T Y L E }-----
+NRP_Config.DisableAttackWalkStyle = false
+
+
 -----{ P R O G R E S S B A R   T R I G G E R }-----
 NRP_Config.Progressbar = function(time)
     TriggerEvent('nrp_progressbar:progress', time)
