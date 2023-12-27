@@ -10,7 +10,7 @@ NRP_Webhook_Config.ConnectingLogsTitle = '__**Spieler beigetreten**__'
 NRP_Webhook_Config.ConnectingLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.ConnectingLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.ConnectingLogsWebhookColor = 4653160
-NRP_Webhook_Config.ConnectingLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.ConnectingLogsWebhook = 'Discord_Webhook'
 
 
 -----{ D I S C O N N E C T I N G   L O G S }-----
@@ -22,7 +22,7 @@ NRP_Webhook_Config.DisconnectingLogsTitle = '__**Spieler verlassen**__'
 NRP_Webhook_Config.DisconnectingLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.DisconnectingLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.DisconnectingLogsWebhookColor = 4653160
-NRP_Webhook_Config.DisconnectingLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.DisconnectingLogsWebhook = 'Discord_Webhook'
 
 
 -----{ C H A T   L O G S }-----
@@ -34,7 +34,7 @@ NRP_Webhook_Config.ChatLogsTitle = '__**Chat Nachricht**__'
 NRP_Webhook_Config.ChatLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.ChatLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.ChatLogsWebhookColor = 4653160
-NRP_Webhook_Config.ChatLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.ChatLogsWebhook = 'Discord_Webhook'
 
 
 -----{ R E S S O U R C E   S T A R T E D   L O G S }-----
@@ -46,7 +46,7 @@ NRP_Webhook_Config.RessourceStartedLogsTitle = '__**Ressource gestartet**__'
 NRP_Webhook_Config.RessourceStartedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.RessourceStartedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.RessourceStartedLogsWebhookColor = 4653160
-NRP_Webhook_Config.RessourceStartedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.RessourceStartedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ R E S S O U R C E   S T O P P E D   L O G S }-----
@@ -58,7 +58,7 @@ NRP_Webhook_Config.RessourceStoppedLogsTitle = '__**Ressource gestoppt**__'
 NRP_Webhook_Config.RessourceStoppedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.RessourceStoppedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.RessourceStoppedLogsWebhookColor = 4653160
-NRP_Webhook_Config.RessourceStoppedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.RessourceStoppedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   P L A Y E R   K I C K E D   L O G S }-----
@@ -70,7 +70,7 @@ NRP_Webhook_Config.txAdminPlayerKickedLogsTitle = '__**txAdmin Spieler gekickt**
 NRP_Webhook_Config.txAdminPlayerKickedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminPlayerKickedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminPlayerKickedLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminPlayerKickedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminPlayerKickedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   P L A Y E R   W A R N E D   L O G S }-----
@@ -82,7 +82,7 @@ NRP_Webhook_Config.txAdminPlayerWarnedLogsTitle = '__**txAdmin Spieler verwarnt*
 NRP_Webhook_Config.txAdminPlayerWarnedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminPlayerWarnedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminPlayerWarnedLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminPlayerWarnedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminPlayerWarnedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   P L A Y E R   B A N N E D   L O G S }-----
@@ -94,7 +94,7 @@ NRP_Webhook_Config.txAdminPlayerBannedLogsTitle = '__**txAdmin Spieler gebannt**
 NRP_Webhook_Config.txAdminPlayerBannedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminPlayerBannedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminPlayerBannedLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminPlayerBannedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminPlayerBannedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   A N N O U N C E M E N T   L O G S }-----
@@ -106,7 +106,7 @@ NRP_Webhook_Config.txAdminAnnouncementLogsTitle = '__**txAdmin Ankündigung**__'
 NRP_Webhook_Config.txAdminAnnouncementLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminAnnouncementLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminAnnouncementLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminAnnouncementLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminAnnouncementLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   C O N F I G   C H A N G E D   L O G S }-----
@@ -118,7 +118,7 @@ NRP_Webhook_Config.txAdminConfigChangedLogsTitle = '__**txAdmin Config geändert
 NRP_Webhook_Config.txAdminConfigChangedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminConfigChangedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminConfigChangedLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminConfigChangedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminConfigChangedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   P L A Y E R   H E A L E D   L O G S }-----
@@ -130,7 +130,7 @@ NRP_Webhook_Config.txAdminConfigChangedLogsTitle = '__**txAdmin Spieler geheilt*
 NRP_Webhook_Config.txAdminConfigChangedLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminConfigChangedLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminConfigChangedLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminConfigChangedLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminConfigChangedLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   S E R V E R   S H U T T I N G   D O W N   L O G S }-----
@@ -142,7 +142,7 @@ NRP_Webhook_Config.txAdminServerShuttingDownLogsTitle = '__**txAdmin Server wird
 NRP_Webhook_Config.txAdminServerShuttingDownLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminServerShuttingDownLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminServerShuttingDownLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminServerShuttingDownLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminServerShuttingDownLogsWebhook = 'Discord_Webhook'
 
 
 -----{ T X A D M I N   D I R E C T   M E S S A G E   L O G S }-----
@@ -154,10 +154,10 @@ NRP_Webhook_Config.txAdminDirectMessageLogsTitle = '__**txAdmin Direktnachricht*
 NRP_Webhook_Config.txAdminDirectMessageLogsIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminDirectMessageLogsFooterIconURL = 'https://cdn.discordapp.com/attachments/1090635502903885835/1090639002618572881/Nuri_RP_Logo_Original_Animiert_Komprimiert.gif?ex=6554d139&is=65425c39&hm=bec537510cc5d9179692cc88bdc7f3c2abdb58a7b9cf65895fc2869c9b2a9967&'
 NRP_Webhook_Config.txAdminDirectMessageLogsWebhookColor = 4653160
-NRP_Webhook_Config.txAdminDirectMessageLogsWebhook = 'https://discord.com/api/webhooks/1140310610714837073/jqfIYzl3hG3npDIOfnjsXTbrYC0CaqnA8hl4sobaxM9na0LJaHaQ0IKjZIJzbrnTDgb9'
+NRP_Webhook_Config.txAdminDirectMessageLogsWebhook = 'Discord_Webhook'
 
 
 -----{ I N F O R M A T I O N }-----
--- This is only the Config for the Discord Webhooks! The other Config is in the "config.lua" file in the "config" Folder!
+-- Das hier ist nur die Discord Webhook Config. Die Config ist in der "config.lua" im "config" Ordner!
 
--- The Discord Webhook Color is a decimal value. You can see it on this site: https://www.spycolor.com
+-- Die Discord Webhook Farbe ist eine Dezimalzahl. Du findest sie hier: https://www.spycolor.com
