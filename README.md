@@ -282,6 +282,8 @@
 > 
 > Debug Prints hinzufügen
 >
+> Anschnallgurt hinzufügen
+>
 > Discord Logs überarbeiten
 >
 > Easteregg überarbeiten
