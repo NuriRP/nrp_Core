@@ -178,6 +178,8 @@
 >
 > Moneykill
 >
+> Kill notify
+>
 > Anti Weaponhit
 >
 > Incapacitated
@@ -185,8 +187,6 @@
 > Vehicle whitelist
 >
 > Weapon whitelist
->
-> Kill notify
 >
 > Connecting Logs
 >
