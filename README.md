@@ -270,6 +270,8 @@
 >
 > /fulltune Befehl hinzufügen
 >
+> /tiktok Befehl hinzufügen
+>
 > Feuerwerk hinzufügen
 >
 > Weitere Config Einstellungen hinzufügen
