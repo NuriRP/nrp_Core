@@ -3597,7 +3597,7 @@ if NRP_Config.DrugEffects then
 
 
         local randomNumber = math.random(1, 100)
-        if randomNumber <= 50 then
+        if randomNumber <= NRP_Config.DrugEffectsBadtripChance then
 	        SetFacialClipsetOverride(playerPed, "mood_happy_1")
         else
             SetFacialClipsetOverride(playerPed, "mood_frustrated_1")
