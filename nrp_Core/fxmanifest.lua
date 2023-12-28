@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'Erson Pelmeni #1'
 description 'Core system based on ESX.'
-version '1.1.0'
+version '1.1.1'
 repository 'https://github.com/NuriRP/nrp_Core'
 
 client_scripts {
