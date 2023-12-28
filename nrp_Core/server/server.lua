@@ -904,11 +904,13 @@ if NRP_Config.DisconnectingLogs then
     AddEventHandler('playerDropped', function(reason)
         local source = source
         local xPlayer = ESX.GetPlayerFromId(source)
-        local playerName = GetPlayerName(source)
+        local playerName = GetPlayerName(source).. " ("..xPlayer.getName()..")"
         local playerGroup = xPlayer.getGroup()
+        local playerJob = xPlayer.getJob().label.." - "..xPlayer.getJob().grade_label
+        local playerMoney = xPlayer.getMoney()
+        local playerBlackMoney = xPlayer.getAccount('black_money').money
+        local playerBank = xPlayer.getAccount('bank').money
         local playerIp = GetPlayerEndpoint(source)
-        local accounts = ESX.GetPlayerFromId(source).getAccounts()
-        local money = accounts[1].money
         local playerCoords = GetEntityCoords(GetPlayerPed(source))
         local coordsString = tostring(playerCoords.x) .. ", " .. tostring(playerCoords.y) .. ", " .. tostring(playerCoords.z)
         local playerHealth = GetEntityHealth(GetPlayerPed(source))
@@ -947,7 +949,7 @@ if NRP_Config.DisconnectingLogs then
                     icon_url = NRP_Webhook_Config.DisconnectingLogsAuthorIconURL
                 },
                 title = NRP_Webhook_Config.DisconnectingLogsTitle,
-                description = "\n**Name:** "..playerName.. '\n**ID:** '..source.. '\n**Gruppe:** '..playerGroup.. '\n**IP:** ||'..playerIp..'||\n**Geld:** '..money.. '\n**Koordinaten:** '..coordsString..'\n**Leben:** '..playerHealth..'\n**Panzerung:** '..playerArmor..'\n**Lizenz:** '..identifier.. '\n**Lizenz 2:** '..identifier2.. '\n**Discord ID:** <@' ..identifier3:gsub("discord:", "").."> / "..identifier3:gsub("discord:", "")..'\n**Xbox:** '..identifier4.. '\n**Live:** '..identifier5.. '\n**FiveM:** '..identifier6..'\n**Grund:** '..reason,
+                description = "\n**Name:** "..playerName.. '\n**ID:** '..source.. '\n**Gruppe:** '..playerGroup.. '\n**IP:** ||'..playerIp..'||\n**Koordinaten:** '..coordsString..'\n**Job:** '..playerJob..'\n**Bargeld:** '..playerMoney..'\n**Schwarzgeld:** '..playerBlackMoney..'\n**Bank:** '..playerBank..'\n**Leben:** '..playerHealth..'\n**Panzerung:** '..playerArmor..'\n**Lizenz:** '..identifier.. '\n**Lizenz 2:** '..identifier2.. '\n**Discord ID:** <@' ..identifier3:gsub("discord:", "").."> / "..identifier3:gsub("discord:", "")..'\n**Xbox:** '..identifier4.. '\n**Live:** '..identifier5.. '\n**FiveM:** '..identifier6..'\n**Grund:** '..reason,
                 thumbnail = {
                     url = NRP_Webhook_Config.DisconnectingLogsIconURL
                 },
@@ -968,8 +970,12 @@ if NRP_Config.ChatLogs then
     AddEventHandler('chatMessage', function(source, name, message)
         local source = source
         local xPlayer = ESX.GetPlayerFromId(source)
-        local playerName = GetPlayerName(source)
+        local playerName = GetPlayerName(source).. " ("..xPlayer.getName()..")"
         local playerGroup = xPlayer.getGroup()
+        local playerJob = xPlayer.getJob().label.." - "..xPlayer.getJob().grade_label
+        local playerMoney = xPlayer.getMoney()
+        local playerBlackMoney = xPlayer.getAccount('black_money').money
+        local playerBank = xPlayer.getAccount('bank').money
         local playerIp = GetPlayerEndpoint(source)
         local playerCoords = GetEntityCoords(GetPlayerPed(source))
         local coordsString = tostring(playerCoords.x) .. ", " .. tostring(playerCoords.y) .. ", " .. tostring(playerCoords.z)
@@ -1009,7 +1015,7 @@ if NRP_Config.ChatLogs then
                     icon_url = NRP_Webhook_Config.ChatLogsAuthorIconURL
                 },
                 title = NRP_Webhook_Config.ChatLogsTitle,
-                description = '\n**Name:** '..playerName.. '\n**ID:** '..source.. '\n**Gruppe:** '..playerGroup.. '\n**IP:** ||'..playerIp..'||\n**Koordinaten:** '..coordsString..'\n**Leben:** '..playerHealth..'\n**Panzerung:** '..playerArmor..'\n**Lizenz:** '..identifier.. '\n**Lizenz 2:** '..identifier2.. '\n**Discord ID:** <@' ..identifier3:gsub("discord:", "").."> / "..identifier3:gsub("discord:", "")..'\n**Xbox:** '..identifier4.. '\n**Live:** '..identifier5.. '\n**FiveM:** '..identifier6..'\n**Nachricht:** `'..message..'`',
+                description = '\n**Name:** '..playerName.. '\n**ID:** '..source.. '\n**Gruppe:** '..playerGroup.. '\n**IP:** ||'..playerIp..'||\n**Koordinaten:** '..coordsString..'\n**Job:** '..playerJob..'\n**Bargeld:** '..playerMoney..'\n**Schwarzgeld:** '..playerBlackMoney..'\n**Bank:** '..playerBank..'\n**Leben:** '..playerHealth..'\n**Panzerung:** '..playerArmor..'\n**Lizenz:** '..identifier.. '\n**Lizenz 2:** '..identifier2.. '\n**Discord ID:** <@' ..identifier3:gsub("discord:", "").."> / "..identifier3:gsub("discord:", "")..'\n**Xbox:** '..identifier4.. '\n**Live:** '..identifier5.. '\n**FiveM:** '..identifier6..'\n**Nachricht:** `'..message..'`',
                 thumbnail = {
                     url = NRP_Webhook_Config.ChatLogsIconURL
                 },
