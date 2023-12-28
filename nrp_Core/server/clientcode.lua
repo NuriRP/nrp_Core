@@ -4684,12 +4684,12 @@ if NRP_Config.Indicators then
 
     RegisterNetEvent('updateIndicators')
     AddEventHandler('updateIndicators', function(PID, dir, Toggle)
-		    local VehChecker = GetVehiclePedIsIn(GetPlayerPed(GetPlayerFromServerId(PID)), false)
-		    if dir == 'left' then
-			    SetVehicleIndicatorLights(VehChecker, 1, Toggle)
-		    elseif dir == 'right' then
-			    SetVehicleIndicatorLights(VehChecker, 0, Toggle)
-	    end
+	local VehChecker = GetVehiclePedIsIn(GetPlayerPed(GetPlayerFromServerId(PID)), false)
+	if dir == 'left' then
+	    SetVehicleIndicatorLights(VehChecker, 1, Toggle)
+	elseif dir == 'right' then
+	    SetVehicleIndicatorLights(VehChecker, 0, Toggle)
+	end
     end)
 end
 
@@ -4708,10 +4708,11 @@ end
 -----{ D I S A B L E   A T T A C K   W A L K   S T Y L E }-----
 if NRP_Config.DisableAttackWalkStyle then
     CreateThread(function()
-	    while true do
-		    Wait(0)
-		    SetPedUsingActionMode(PlayerPedId(), false, -1, 0)
-	    end
+	while true do
+	    Wait(0)
+            local playerPedId = PlayerPedId()
+	    SetPedUsingActionMode(playerPedId, false, -1, 0)
+	end
     end)
 end
     ]]
