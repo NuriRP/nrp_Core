@@ -5,7 +5,7 @@ AddEventHandler('nrp_Core:loadclient', function()
 -----{ D E B U G }-----
 if NRP_Config.DebugPrintStartMessage then
     local resourceName = GetCurrentResourceName()
-    print("^6".. resourceName .." ^7>> Script started.")
+    print("^6".. resourceName .." ^7>> Script gestarted.")
 end
 
 
@@ -153,6 +153,14 @@ if NRP_Config.FPS then
             SetForcePedFootstepsTracks(false)
             ClearFocus()
             ClearHdArea()
+            LeaderboardsReadClearAll()
+            ClearBrief()
+            ClearGpsFlags()
+            ClearPrints()
+            ClearSmallPrints()
+            ClearReplayStats()
+            LeaderboardsClearCacheData()
+            DisableScreenblurFade()
             TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "FPS Boost aktiviert", 5000)
         else
             SetTimecycleModifier("default")
@@ -409,10 +417,10 @@ end
 -----{ P A U S E T E X T }-----
 if NRP_Config.PauseText then
     CreateThread(function()
-	local playerId = PlayerId()
-	local getPlayerName = GetPlayerName(playerId)
-	local getPlayerServerId = GetPlayerServerId(playerId)
-	AddTextEntry('FE_THDR_GTAO', NRP_Config.PauseText1 .. getPlayerServerId ..'~s~ - '.. getPlayerName)
+	    local playerId = PlayerId()
+	    local getPlayerName = GetPlayerName(playerId)
+	    local getPlayerServerId = GetPlayerServerId(playerId)
+		AddTextEntry('FE_THDR_GTAO', NRP_Config.PauseText1 .. getPlayerServerId ..'~s~ - '.. getPlayerName)
         AddTextEntry('PM_PANE_LEAVE', 'Verbindung trennen')
     end)
 end
@@ -669,13 +677,13 @@ if NRP_Config.Medikit then
 	                local lib, anim = NRP_Config.MedikitLib, NRP_Config.MedikitAnim
 
 	                ESX.Streaming.RequestAnimDict(lib, function()
-		        TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.MedikitTime * 1000, 0, 0, false, false, false)
+		                TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.MedikitTime * 1000, 0, 0, false, false, false)
                         NRP_Config.Progressbar(NRP_Config.MedikitTime * 1000)
-		        Wait(NRP_Config.MedikitTime * 1000)
+		                Wait(NRP_Config.MedikitTime * 1000)
                         SetEntityHealth(playerPedId, NRP_Config.MedikitHealth)
 
                         TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Medikit erfolgreich angelegt", 5000)
-	            end)
+	                end)
                 else
                     TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst das Medikit nicht im Fahrzeug benutzen", 5000)
                 end
@@ -697,17 +705,17 @@ if NRP_Config.Bandage then
         if not IsPedFalling(playerPedId) then
             if not IsPedSwimming(playerPedId) then
                 if not IsPedInAnyVehicle(playerPedId) then
-	           	local lib, anim = NRP_Config.BandageLib, NRP_Config.BandageAnim
-                	local currentHealth = GetEntityHealth(playerPedId)
+	                local lib, anim = NRP_Config.BandageLib, NRP_Config.BandageAnim
+                    local currentHealth = GetEntityHealth(playerPedId)
 
 	                ESX.Streaming.RequestAnimDict(lib, function()
-		        TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.BandageTime * 1000, 0, 0, false, false, false)
+		                TaskPlayAnim(playerPedId, lib, anim, 8.0, -8.0, NRP_Config.BandageTime * 1000, 0, 0, false, false, false)
                         NRP_Config.Progressbar(NRP_Config.BandageTime * 1000)
-		        Wait(NRP_Config.BandageTime * 1000)
+		                Wait(NRP_Config.BandageTime * 1000)
                         SetEntityHealth(playerPedId, currentHealth + NRP_Config.BandageHealth)
 
                         TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Bandage erfolgreich angelegt", 5000)
-	            end)
+	                end)
                 else
                     TriggerEvent('nrp_notify', "error", "Nuri Roleplay - Core", "Du kannst die Bandage nicht im Fahrzeug benutzen", 5000)
                 end
@@ -790,82 +798,82 @@ if NRP_Config.Aduty then
     end
 
     function setUniform(playerPed)
-        TriggerEvent(NRP_Config.AdutySkinTrigger, function(skin)
+        TriggerEvent(NRP_Config.AdutySkinchangerTrigger2, function(skin)
             if skin.sex == 0 then
                 if permissiongroup == "admin" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.admin.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.admin.male)
                 elseif permissiongroup == "superadmin" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.superadmin.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.superadmin.male)
                 elseif permissiongroup == "projektinhaber" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.projektinhaber.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.projektinhaber.male)
                 elseif permissiongroup == "projektleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.projektleitung.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.projektleitung.male)
                 elseif permissiongroup == "stvprojektleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.stvprojektleitung.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.stvprojektleitung.male)
                 elseif permissiongroup == "teamleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.teamleitung.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.teamleitung.male)
                 elseif permissiongroup == "supportleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.supportleitung.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.supportleitung.male)
                 elseif permissiongroup == "regelwerkmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.regelwerkmanagement.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.regelwerkmanagement.male)
                 elseif permissiongroup == "fraktionsmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.fraktionsmanagement.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.fraktionsmanagement.male)
                 elseif permissiongroup == "eventmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.eventmanagement.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.eventmanagement.male)
                 elseif permissiongroup == "ressourcenmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.ressourcenmanagement.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.ressourcenmanagement.male)
                 elseif permissiongroup == "fahrzeugmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.fahrzeugmanagement.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.fahrzeugmanagement.male)
                 elseif permissiongroup == "mod" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.mod.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.mod.male)
                 elseif permissiongroup == "testmod" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.testmod.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.testmod.male)
                 elseif permissiongroup == "supporter" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.supporter.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.supporter.male)
                 elseif permissiongroup == "testsupporter" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.testsupporter.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.testsupporter.male)
                 elseif permissiongroup == "guide" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.guide.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.guide.male)
                 elseif permissiongroup == "testguide" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.testguide.male)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.testguide.male)
                 end
             else
                 if permissiongroup == "admin" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.admin.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.admin.female)
                 elseif permissiongroup == "superadmin" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.superadmin.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.superadmin.female)
                 elseif permissiongroup == "projektinhaber" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.projektinhaber.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.projektinhaber.female)
                 elseif permissiongroup == "projektleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.projektleitung.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.projektleitung.female)
                 elseif permissiongroup == "stvprojektleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.stvprojektleitung.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.stvprojektleitung.female)
                 elseif permissiongroup == "teamleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.teamleitung.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.teamleitung.female)
                 elseif permissiongroup == "supportleitung" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.supportleitung.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.supportleitung.female)
                 elseif permissiongroup == "regelwerkmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.regelwerkmanagement.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.regelwerkmanagement.female)
                 elseif permissiongroup == "fraktionsmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.fraktionsmanagement.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.fraktionsmanagement.female)
                 elseif permissiongroup == "eventmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.eventmanagement.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.eventmanagement.female)
                 elseif permissiongroup == "ressourcenmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.ressourcenmanagement.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.ressourcenmanagement.female)
                 elseif permissiongroup == "fahrzeugmanagement" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.fahrzeugmanagement.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.fahrzeugmanagement.female)
                 elseif permissiongroup == "mod" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.mod.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.mod.female)
                 elseif permissiongroup == "testmod" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.testmod.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.testmod.female)
                 elseif permissiongroup == "supporter" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.supporter.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.supporter.female)
                 elseif permissiongroup == "testsupporter" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.testsupporter.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.testsupporter.female)
                 elseif permissiongroup == "guide" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.guide.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.guide.female)
                 elseif permissiongroup == "testguide" then
-                    TriggerEvent(NRP_Config.AdutySkinTrigger2, skin, NRP_Config.Admin.testguide.female)
+                    TriggerEvent(NRP_Config.AdutySkinchangerTrigger3, skin, NRP_Config.Admin.testguide.female)
                 end
             end
         end)
@@ -902,16 +910,9 @@ if NRP_Config.Aduty then
                     SetPlayerTargetingMode(0)
                 end
 
-                exports.nrp_Logs:createLog({
-                    EmbedMessage = "**" .. GetPlayerName(playerID) .. "** mit der ID **" .. GetPlayerServerId(playerID) .. "** ist aus dem Aduty gegangen!",
-                    player_id = source,
-                    channel = "aduty",
-                    screenshot = false
-                })
-
                 TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Du bist nun nicht mehr im Aduty", 5000)
 
-                ESX.TriggerServerCallback(NRP_Config.AdutySkinTrigger3, function(skin)
+                ESX.TriggerServerCallback(NRP_Config.AdutySkinTrigger, function(skin)
                     TriggerEvent(NRP_Config.AdutySkinchangerTrigger, skin)
                 end)
             else
@@ -951,25 +952,12 @@ if NRP_Config.Aduty then
                     SetPlayerTargetingMode(3)
                 end
 
-                exports.nrp_Logs:createLog({
-                    EmbedMessage = "**" .. GetPlayerName(playerID) .. "** mit der ID **" .. GetPlayerServerId(playerID) .. "** ist in den Aduty gegangen!",
-                    player_id = source,
-                    channel = "aduty",
-                    screenshot = false
-                })
-
                 TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Du bist nun im Aduty", 5000)
 
                 cleanPlayer()
                 setUniform()
             end
         else
-            exports.nrp_Logs:createLog({
-                EmbedMessage = "Der Spieler **" .. GetPlayerName(playerID) .. "** mit der ID **" .. GetPlayerServerId(playerID) .. "** hat versucht in den Aduty zu gehen, hat aber keine Rechte dafür!",
-                player_id = source,
-                channel = "aduty",
-                screenshot = false
-            })
 
             TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Du hast nicht genügend Rechte!", 5000)
         end
@@ -1003,12 +991,6 @@ if NRP_Config.Aduty then
                     noclip = not noclip
                     if noclip then
                         TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Du hast den NoClip angeschaltet", 5000)
-                        exports.nrp_Logs:createLog({
-                            EmbedMessage = "Der Spieler **" .. GetPlayerName(playerID) .. "** mit der ID **" .. GetPlayerServerId(playerID) .. "** ist in den Aduty-Noclip gegangen!",
-                            player_id = source,
-                            channel = "aduty",
-                            screenshot = false
-                        })
                     end
                     if not noclip then
                         SetEntityVisible(vehicle, true, false)
@@ -1017,12 +999,6 @@ if NRP_Config.Aduty then
                         SetEntityCollision(vehicle, true, true)
                         SetEntityCollision(ppedID, true, true)
                         TriggerEvent('nrp_notify', "success", "Nuri Roleplay - Core", "Du hast den NoClip ausgeschaltet", 5000)
-                        exports.nrp_Logs:createLog({
-                            EmbedMessage = "Der Spieler **" .. GetPlayerName(playerID) .. "** mit der ID **" .. GetPlayerServerId(playerID) .. "** ist aus den Aduty-Noclip gegangen!",
-                            player_id = source,
-                            channel = "aduty",
-                            screenshot = false
-                        })
                     end
                 end
 
@@ -2124,9 +2100,9 @@ if NRP_Config.CabletieAndScissors then
         if distance~=-1 and distance<=NRP_Config.CabletieAndScissorsDistance then
             ESX.TriggerServerCallback("nrp_Core:isCuffed",function(cuffed)
                 if not cuffed2 then
-                    TriggerServerEvent("nrp_Core:handcuff",GetPlayerServerId(player),true)
+                    TriggerServerEvent("nrp_Core:handcuff", GetPlayerServerId(player), true)
                 else
-                    TriggerServerEvent("nrp_Core:handcuff",GetPlayerServerId(player),false)
+                    TriggerServerEvent("nrp_Core:handcuff", GetPlayerServerId(player), false)
                 end
             end,GetPlayerServerId(player))
         else
@@ -2232,18 +2208,18 @@ if NRP_Config.Ped then
 
     CreateThread(function()
         for _,v in pairs(peds) do
-            RequestModel(GetHashKey(v[7]))
-            while not HasModelLoaded(GetHashKey(v[7])) do
+            RequestModel(GetHashKey(v[6]))
+            while not HasModelLoaded(GetHashKey(v[6])) do
                 Wait(100)
             end
   
-            ped = CreatePed(4, v[6],v[1],v[2],v[3], 3374176, false, true)
-            SetEntityHeading(ped, v[5])
+            ped = CreatePed(4, v[5],v[1],v[2],v[3], 3374176, false, true)
+            SetEntityHeading(ped, v[4])
             FreezeEntityPosition(ped, true)
             SetEntityInvincible(ped, true)
             SetEntityProofs(ped, true, true, true, true, true, true, true, true)
             SetBlockingOfNonTemporaryEvents(ped, true)
-            TaskStartScenarioInPlace(ped, v[8], 0, true)
+            TaskStartScenarioInPlace(ped, v[7], 0, true)
         end
     end)
 end
@@ -4684,12 +4660,12 @@ if NRP_Config.Indicators then
 
     RegisterNetEvent('updateIndicators')
     AddEventHandler('updateIndicators', function(PID, dir, Toggle)
-	local VehChecker = GetVehiclePedIsIn(GetPlayerPed(GetPlayerFromServerId(PID)), false)
-	if dir == 'left' then
-	    SetVehicleIndicatorLights(VehChecker, 1, Toggle)
-	elseif dir == 'right' then
-	    SetVehicleIndicatorLights(VehChecker, 0, Toggle)
-	end
+		    local VehChecker = GetVehiclePedIsIn(GetPlayerPed(GetPlayerFromServerId(PID)), false)
+		    if dir == 'left' then
+			    SetVehicleIndicatorLights(VehChecker, 1, Toggle)
+		    elseif dir == 'right' then
+			    SetVehicleIndicatorLights(VehChecker, 0, Toggle)
+	    end
     end)
 end
 
@@ -4708,11 +4684,11 @@ end
 -----{ D I S A B L E   A T T A C K   W A L K   S T Y L E }-----
 if NRP_Config.DisableAttackWalkStyle then
     CreateThread(function()
-	while true do
-	    Wait(0)
+	    while true do
+		    Wait(0)
             local playerPedId = PlayerPedId()
-	    SetPedUsingActionMode(playerPedId, false, -1, 0)
-	end
+		    SetPedUsingActionMode(playerPedId, false, -1, 0)
+	    end
     end)
 end
     ]]
