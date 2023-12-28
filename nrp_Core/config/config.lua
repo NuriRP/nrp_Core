@@ -1478,6 +1478,7 @@ NRP_Config.RoutenSelling = {
 -----{ D R U G   E F F E C T S }-----
 NRP_Config.DrugEffects = true
 NRP_Config.DrugEffectsDuration = 60
+NRP_Config.DrugEffectsBadtripChance = 25
 NRP_Config.DrugEffectsDrive = {
     1,
     3,
