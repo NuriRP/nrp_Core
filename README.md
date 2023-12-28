@@ -286,6 +286,8 @@
 >
 > Anschnallgurt hinzufügen
 >
+> Join Transition hinzufügen
+>
 > Discord Logs überarbeiten
 >
 > Easteregg überarbeiten
