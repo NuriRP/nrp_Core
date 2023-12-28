@@ -4,7 +4,7 @@
 
 ## Informationen
 <sup>Allgemeine Information der Ressource</sup>
-> Optimiert (Idle: 0.18 - 0.22ms)<sup> Abhängig aktivierter Funktionen</sup>
+> Optimiert (Idle: 0.17 - 0.22ms)<sup> Abhängig aktivierter Funktionen</sup>
 > 
 > Open-Source
 > 
