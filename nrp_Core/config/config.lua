@@ -2,11 +2,11 @@ NRP_Config = {}
 
 
 -----{ D E B U G }-----
-NRP_Config.DebugPrintStartMessage = true
-NRP_Config.DebugNameCheck = true
-NRP_Config.DebugGameBuildCheck = true
-NRP_Config.DebugVersionsCheck = true
-NRP_Config.DebugConvar = true
+NRP_Config.DebugPrintStartMessage = false
+NRP_Config.DebugNameCheck = false
+NRP_Config.DebugGameBuildCheck = false
+NRP_Config.DebugVersionsCheck = false
+NRP_Config.DebugConvar = false
 
 
 -----{ E S X }-----
@@ -146,7 +146,7 @@ NRP_Config.VehicleRentalColorA = 100
 
 -----{ P M A - V O I C E   C I R C L E }-----
 NRP_Config.PMAVoiceCircle = true
-NRP_Config.PMAVoiceCircleTrigger = 'pma-voice:setTalkingMode'
+NRP_Config.PMAVoiceCircleTrigger = 'nrp_Voice:setTalkingMode'
 NRP_Config.PMAVoiceCircleDuration = 200
 NRP_Config.PMAVoiceCircleMarkerType = 1
 NRP_Config.PMAVoiceCircleMarkerHeight = 0.7
@@ -201,10 +201,10 @@ NRP_Config.AdutyText = 'Aduty aktivieren / deaktivieren'
 NRP_Config.AdutyDefaultKey = 'f9'
 NRP_Config.AdutyUncuffTrigger = 'esx_policejob:unrestrain'
 NRP_Config.AdutyReviveTrigger = 'esx_ambulancejob:revive'
-NRP_Config.AdutySkinTrigger = 'skinchanger:getSkin'
-NRP_Config.AdutySkinTrigger2 = 'skinchanger:loadClothes'
-NRP_Config.AdutySkinTrigger3 = 'esx_skin:getPlayerSkin'
+NRP_Config.AdutySkinTrigger = 'esx_skin:getPlayerSkin'
 NRP_Config.AdutySkinchangerTrigger = 'skinchanger:loadSkin'
+NRP_Config.AdutySkinchangerTrigger2 = 'skinchanger:getSkin'
+NRP_Config.AdutySkinchangerTrigger3 = 'skinchanger:loadClothes'
 NRP_Config.Admin = {
     projektinhaber = {
         male = {
@@ -927,7 +927,7 @@ NRP_Config.AmmoClipAmmount = 40
 
 
 -----{ S A F E   H E A L T H   A N D   A R M O R }-----
-NRP_Config.SafeHealthAndArmor = false
+NRP_Config.SafeHealthAndArmor = true
 
 
 -----{ R E P A I R K I T }-----
@@ -990,7 +990,7 @@ NRP_Config.SafezoneEffectName = 'spectator6'
 NRP_Config.SafezoneEffectDuration = 200
 NRP_Config.SafezoneFastrun = false
 NRP_Config.SafezoneFastrunSpeed = 1.49
-NRP_Config.SafezoneOpacity = true
+NRP_Config.SafezoneOpacity = false
 NRP_Config.SafezoneOpacityValue = 200
 NRP_Config.SafezoneBlipColor = 50
 NRP_Config.SafezoneBlipAlpha = 90
@@ -2068,7 +2068,7 @@ NRP_Config.KillNotify = true
 
 
 -----{ P H O N E   T A X }-----
-NRP_Config.PhoneTax = true
+NRP_Config.PhoneTax = false
 NRP_Config.PhoneTaxItemName = 'phone'
 NRP_Config.PhoneTaxAmount = 50
 NRP_Config.PhoneTaxDuration = 1200000
@@ -2089,7 +2089,7 @@ NRP_Config.IncapacitatedSkinchangerTrigger = 'skinchanger:getSkin'
 
 
 -----{ V E H I C L E   W H I T E L I S T }-----
-NRP_Config.VehicleWhitelist = true
+NRP_Config.VehicleWhitelist = false
 NRP_Config.VehicleWhitelistJobs = {
     'police',
     'ambulance'
@@ -2120,7 +2120,7 @@ NRP_Config.VehicleWhitelistVehicles = {
 
 
 -----{ W E A P O N   W H I T E L I S T }-----
-NRP_Config.WeaponWhitelist = true
+NRP_Config.WeaponWhitelist = false
 NRP_Config.WeaponWhitelistWeapons = {
     ['police'] = {
         'weapon_nightstick',
@@ -2182,32 +2182,6 @@ NRP_Config.txAdminServerShuttingDownLogs = true
 
 -----{ T X A D M I N   D I R E C T   M E S S A G E   L O G S }-----
 NRP_Config.txAdminDirectMessageLogs = true
-
-
------{ A N T I   H E A L T H   H A C K }-----           --  Not working atm
-NRP_Config.AntiHealthHack = false
-NRP_Config.AntiHealthHackMessage = 'Anti Health Hack.'
-NRP_Config.AntiHealthHackMaxHealth = 200
-
-
------{ A N T I   S P E C T A T E }-----           --  Not working atm
-NRP_Config.AntiSpectate = false
-NRP_Config.AntiSpectateMessage = 'Anti Spectate.'
-
-
------{ A N T I   N I G H T   V I S I O N }-----           --  Not working atm
-NRP_Config.AntiNightVison = false
-NRP_Config.AntiNightVisonMessage = 'Anti Night Vision.'
-
-
------{ A N T I   T H E R M A L   V I S I O N }-----           --  Not working atm
-NRP_Config.AntiThermalVison = false
-NRP_Config.AntiThermalVisonMessage = 'Anti Thermal Vision.'
-
-
------{ A N T I   S U P E R J U M P }-----           --  Not working atm
-NRP_Config.AntiSuperjump = false
-NRP_Config.AntiSuperjumpMessage = 'Anti Superjump.'
 
 
 -----{ A N T I   P I C K U P S }-----
@@ -2305,7 +2279,7 @@ end
 
 
 -----{ I N F O R M A T I O N }-----
--- Besserer Waffenconnect und die PMA-Voice nicht verbunden UI können nicht deaktiviert werden! Lösche die Dateien wenn du sie nicht verwenden willst!
+-- Besserer Waffenconnect und die PMA-Voice nicht verbunden UI können nicht deaktiviert werden! Lösche die Dateien wenn du sie  willst!
 
 -- Vergesse nicht die "nrp_Core.sql" Datei in die Datenbank zu importieren!
 
