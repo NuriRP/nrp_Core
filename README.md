@@ -23,13 +23,10 @@
 
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
-> Debugging Features (Startnachricht, Namensüberprüfung, Gamebuild Check, Versions Check & Convar)
-> 
-> Headshot Oneshot
+> ***Bald verfügbar!***
 
-## In Arbeit
-<sup>Diese Features / Verbesserungen sind bei dem nächsten Release mit sehr hoher Warscheinlichkeit dabei</sup>
-> Sprache auf Deutsch ändern
+## Discord
+> ***Bald verfügbar!***
 
 ## Download
 <sup>Die Ressource ist **kostenlos**</sup>
