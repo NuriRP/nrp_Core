@@ -5,7 +5,7 @@
 <sup>Allgemeine Information der Ressource</sup>
 > Optimiert (Idle: 0.17 - 0.22ms)<sup>*</sup>
 > 
-> Open-Source
+> 100% Open-Source
 > 
 > Dump geschützt
 > 
