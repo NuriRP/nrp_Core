@@ -25,7 +25,7 @@
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
 > <details><summary>Anzeigen</summary>
-> 
+>
 > Debug
 > - Ressource gestartet Nachricht
 > - Ressourcenname überprüfung
@@ -35,6 +35,21 @@
 > 
 > ESX
 > - Name
+> 
+> Headshot Oneshot
+> - aktivierbar / deaktivierbar
+> 
+> Anti Motorbikehit
+> - aktivierbar / deaktivierbar
+> 
+> Kepp Flashlight on while moving
+> - aktivierbar / deaktivierbar
+> 
+> Ragdoll
+> - aktivierbar / deaktivierbar
+> - Command Name
+> - Tastenbelegeung Text
+> - Taste
 </details>
 
 ---
