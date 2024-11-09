@@ -321,13 +321,13 @@
 > ***Bald verfügbar!***
 
 ## Installation
-> 1. Lade **nrp_Core** herunter und entpacke die **.zip** Datei.
+> 1. Lade [hier](https://github.com/NuriRP/nrp_Core/releases/latest) die neuste Version vom `nrp_Core` herunter und entpacke die **.zip** Datei.
 >
-> 2. Importiere den **nrp_Core** Ordner in dein FiveM Server Ressourcen Verzeichnis.
+> 2. Importiere den entpackten `nrp_Core` Ordner in dein FiveM Server Ressourcen Verzeichnis.
 >
-> 3. Importiere die **nrp_Core.sql** Datei in deine Datenbank.
+> 3. Importiere die `nrp_Core.sql` Datei in deine Datenbank.
 >
-> 4. Passe den **nrp_Core** in der **config.lua** & **webhookconfig.lua** an. Vergesse nicht die Trigger für die Benachrichtigung und Ankündigung in der **clientcode.lua** & **server.lua** einzusetzen
+> 4. Passe den `nrp_Core` in der `config.lua` & `webhookconfig.lua` an.
 
 ## Fehler melden
 > Melde mir die Fehler [hier](https://github.com/NuriRP/nrp_Core/issues).
