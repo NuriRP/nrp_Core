@@ -32,8 +32,6 @@
 <sup>Die Ressource ist **kostenlos**</sup>
 > [Neuste Version](https://github.com/NuriRP/nrp_Core/releases/latest)
 
-> [Source Code](https://github.com/NuriRP/nrp_Core)
-
 ## Vorschau
 <sup>Vorschau aller enthaltenen Features</sup>
 > ***Bald verfügbar!***
