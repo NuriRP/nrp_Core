@@ -3,7 +3,7 @@
 
 ## Informationen
 <sup>Allgemeine Information der Ressource</sup>
-> Optimiert (Idle: 0.17 - 0.22ms)<sup> Abhängig aktivierter Funktionen</sup>
+> Optimiert (Idle: 0.17 - 0.22ms)<sup>*</sup>
 > 
 > Open-Source
 > 
@@ -18,6 +18,8 @@
 > PMA-Voice support
 >
 > ESX-Framework
+> 
+> <sup>* Abhängig von den aktiviereten Features</sup>
 
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
