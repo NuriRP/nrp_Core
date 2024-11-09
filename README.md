@@ -3,7 +3,7 @@
 
 ## Informationen
 <sup>Allgemeine Information der Ressource</sup>
-> Optimiert (Idle: 0.17 - 0.22ms)<sup>*</sup>
+> Optimiert (Idle: 0.00 - 0.30ms)<sup>*</sup>
 > 
 > 100% Open-Source
 > 
