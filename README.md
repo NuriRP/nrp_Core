@@ -32,6 +32,10 @@
 <sup>Die Ressource ist **kostenlos**</sup>
 > [Download](https://github.com/NuriRP/nrp_Core/releases/latest)
 
+## Vorschau
+<sup>Vorschau aller enthaltenen Features</sup>
+> ***Bald verfügbar!***
+
 ## Vorraussetzungen
 <sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß</sup>
 > Game Build **3095**
@@ -39,10 +43,6 @@
 > [es_extended](https://github.com/esx-framework/esx_core)
 >
 > [pma-voice](https://github.com/AvarianKnight/pma-voice)
-
-## Vorschau
-<sup>Vorschau aller enthaltenen Features</sup>
-> ***Bald verfügbar!***
 
 ## Installation
 > 1. Lade [hier](https://github.com/NuriRP/nrp_Core/releases/latest) die neuste Version vom `nrp_Core` herunter und entpacke die **.zip** Datei.
