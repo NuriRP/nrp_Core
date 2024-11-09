@@ -1,6 +1,7 @@
 # nrp_Core (Preview 1.0.0)
 ### Core System basierend auf dem ESX-Framework.
 
+---
 ## Informationen
 <sup>Allgemeine Information der Ressource</sup>
 > Optimiert (Idle: 0.00 - 0.30ms)<sup>*</sup>
