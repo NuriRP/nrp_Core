@@ -22,13 +22,16 @@
 > 
 > <sup>* Abhängig von den aktiviereten Features</sup>
 
+---
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
 > ***Bald verfügbar!***
 
+---
 ## Discord
 > ***Bald verfügbar!***
 
+---
 ## Download
 <sup>Die Ressource ist **kostenlos**</sup>
 > [Neuste Version](https://github.com/NuriRP/nrp_Core/releases/latest)
@@ -37,6 +40,7 @@
 <sup>Vorschau aller enthaltenen Features</sup>
 > ***Bald verfügbar!***
 
+---
 ## Vorraussetzungen
 <sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß</sup>
 > Game Build **3095**
@@ -45,6 +49,7 @@
 >
 > [pma-voice](https://github.com/AvarianKnight/pma-voice)
 
+---
 ## Installation
 > 1. Lade [hier](https://github.com/NuriRP/nrp_Core/releases/latest) die neuste Version vom `nrp_Core` herunter und entpacke die **.zip** Datei.
 >
@@ -54,8 +59,10 @@
 >
 > 4. Passe den `nrp_Core` in der `config.lua` & `webhookconfig.lua` an.
 
+---
 ## Fehler melden
 > Melde die Fehler [hier](https://github.com/NuriRP/nrp_Core/issues).
 
+---
 ## Verbesserungsvorschläge
 > Du hast eine Verbesserung oder ein neues Feature? Schlage ihn [hier](https://github.com/NuriRP/nrp_Core/pulls) vor.
