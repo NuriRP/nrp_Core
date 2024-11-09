@@ -32,7 +32,7 @@
 
 ## Download
 <sup>Die Ressource ist **kostenlos**</sup>
-> [Download](https://github.com/NuriRP/nrp_Core/releases)
+> [Download](https://github.com/NuriRP/nrp_Core/releases/latest)
 
 ## Vorraussetzungen
 <sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß</sup>
