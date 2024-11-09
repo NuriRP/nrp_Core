@@ -330,7 +330,7 @@
 > 4. Passe den `nrp_Core` in der `config.lua` & `webhookconfig.lua` an.
 
 ## Fehler melden
-> Melde mir die Fehler [hier](https://github.com/NuriRP/nrp_Core/issues).
+> Melde die Fehler [hier](https://github.com/NuriRP/nrp_Core/issues).
 
 ## Verbesserungsvorschläge
-> Du hast eine Verbesserung oder ein neues Feature? Klicke [hier](https://github.com/NuriRP/nrp_Core/pulls).
+> Du hast eine Verbesserung oder ein neues Feature? Schlage ihn [hier](https://github.com/NuriRP/nrp_Core/pulls) vor.
