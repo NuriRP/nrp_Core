@@ -25,13 +25,14 @@
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
 > <details><summary>Anzeigen</summary>
+> 
 > Debug
 > - Ressource gestartet Nachricht
 > - Ressourcenname überprüfung
 > - Gamebuild überprüfung
 > - Versions überprüfung
 > - Convar
-
+> 
 > ESX
 > - Name
 </details>
