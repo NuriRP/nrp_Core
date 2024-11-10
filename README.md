@@ -178,6 +178,32 @@
 > 4. Passe den `nrp_Core` in der `config.lua` & `webhookconfig.lua` an.
 
 ---
+## Nützliche Links
+> [NPC Liste](https://wiki.rage.mp/index.php?title=Peds)
+>
+> [Blip Liste](https://docs.fivem.net/docs/game-references/blips/)
+>
+> [Uhrzeit Liste](https://docs.fivem.net/natives/?_0xE679E3E06E363892)
+>
+> [Waffen Liste](https://wiki.rage.mp/index.php?title=Weapons)
+>
+> [Marker Liste](https://docs.fivem.net/docs/game-references/markers/)
+>
+> [Wetter Liste](https://docs.fivem.net/natives/?_0x29B487C359E19889)
+>
+> [Fahrzeug Lsite](https://docs.fivem.net/docs/game-references/vehicle-models/)
+>
+> [Fahrzeugklassen Lsite](https://docs.fivem.net/natives/?_0x29439776AAA00A62)
+>
+> [Tasten Liste](https://docs.fivem.net/docs/game-references/controls/)
+>
+> [Textformatierung Liste](https://docs.fivem.net/docs/game-references/text-formatting/)
+>
+> [Fahreffekt Liste](https://docs.fivem.net/natives/?_0xC429DCEEB339E129)
+>
+> [Pickup Liste](https://altv.stuyk.com/docs/articles/tables/weapon-pickups.html)
+
+---
 ## Fehler melden
 > Melde die Fehler [hier](https://github.com/NuriRP/nrp_Core/issues).
 
