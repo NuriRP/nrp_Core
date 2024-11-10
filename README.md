@@ -143,7 +143,6 @@
 > - Panicbutton
 > - Bartwuchs
 > - Kaputte Fahrzeuge entfernen
-> - Kein Nebel
 </details>
 
 ---
