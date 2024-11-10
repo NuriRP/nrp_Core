@@ -142,6 +142,7 @@
 > - Fahrzeugname
 > - Panicbutton
 > - Bartwuchs
+> - Skinfix
 > - Kaputte Fahrzeuge entfernen
 </details>
 
