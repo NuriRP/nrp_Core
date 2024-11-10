@@ -23,7 +23,7 @@
 
 ---
 ## Features
-<sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
+<sup>Alle Features können in der Config aktiviert bzw. deaktiviert und angepasst werden</sup>
 > <details><summary>Anzeigen</summary>
 > 
 > - Debug
