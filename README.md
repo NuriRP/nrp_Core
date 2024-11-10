@@ -178,9 +178,11 @@
 >
 > 2. Importiere den entpackten `nrp_Core` Ordner in dein FiveM Server Ressourcen Verzeichnis.
 >
-> 3. Importiere die `nrp_Core.sql` Datei in deine Datenbank.
+> 3. Füge (falls nötig) `ensure nrp_Core` zu deiner `server.cfg` hinzu.
 >
-> 4. Passe den `nrp_Core` in der `config.lua` & `webhookconfig.lua` an.
+> 4. Importiere die `nrp_Core.sql` Datei in deine Datenbank.
+>
+> 5. Passe den `nrp_Core` in der `config.lua` & `webhookconfig.lua` an.
 
 ---
 ## Nützliche Links
