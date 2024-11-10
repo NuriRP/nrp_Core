@@ -167,6 +167,8 @@
 > [es_extended](https://github.com/esx-framework/esx_core)
 >
 > [pma-voice](https://github.com/AvarianKnight/pma-voice)
+>
+> [LegacyFuel](https://github.com/InZidiuZ/LegacyFuel)
 
 ---
 ## Installation
