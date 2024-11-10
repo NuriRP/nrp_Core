@@ -204,7 +204,7 @@
 >
 > [Tasten Liste](https://docs.fivem.net/docs/game-references/controls/)
 >
-> [Textformatierung Liste](https://docs.fivem.net/docs/game-references/text-formatting/)
+> [Textformatierungs Liste](https://docs.fivem.net/docs/game-references/text-formatting/)
 >
 > [Fahreffekt Liste](https://docs.fivem.net/natives/?_0xC429DCEEB339E129)
 >
