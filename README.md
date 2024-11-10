@@ -27,7 +27,6 @@
 > <details><summary>Anzeigen</summary>
 > 
 > - Debug
-> - ESX
 > - Headshot Oneshot
 > - Kein Motorrad Kick
 > - Taschenlampe bleibt bei Bewegung an
