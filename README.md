@@ -25,9 +25,10 @@
 ## Features
 <sup>Alle Features können in der Config aktiviert bzw. deaktiviert werden</sup>
 > <details><summary>Anzeigen</summary>
-> Debug
-> ESX
-> Headshot Oneshot
+> 
+> - Debug
+> - ESX
+> - Headshot Oneshot
 >
 > ***Weiteres Bald verfügbar!***
 </details>
