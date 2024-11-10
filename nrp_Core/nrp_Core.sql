@@ -1,0 +1,41 @@
+INSERT INTO `items` (`name`, `label`, `weight`) VALUES
+	('bier', 'Bier', 1),
+	('bulletproof', 'Schutzweste', 1),
+	('champagner', 'Champagner', 1),
+	('ecstasy', 'Ecstasy', 1),
+	('ecstasypulver', 'Ecstasypulver', 1),
+	('eisen', 'Eisen', 1),
+	('eisenerz', 'Eisenerz', 1),
+	('froesche', 'Frösche', 1),
+	('gehstock', 'Gehstock', 1),
+	('heroin', 'Heroin', 1),
+	('jaegermeister', 'Jägermeister', 1),
+	('joint', 'Joint', 1),
+	('kabelbinder', 'Kabelbinder', 1),
+	('kirsche', 'Kirsche', 1),
+	('koks', 'Koks', 1),
+	('koksblatt', 'Koksblatt', 1),
+	('kupfer', 'Kupfer', 1),
+	('kupfererz', 'Kupfererz', 1),
+	('lsd', 'LSD', 1),
+	('magazin', 'Magazin', 1),
+	('meth', 'Meth', 1),
+	('mehl', 'Mehl', 1),
+	('repairkit', 'Reparaturkasten', 1),
+	('schere', 'Schere', 1),
+	('spitzhacke', 'Spitzhacke', 1),
+	('speed', 'Speed', 1),
+	('traube', 'Traube', 1),
+	('traubensaft', 'Traubensaft', 1),
+	('vodka', 'Vodka', 1),
+	('washkit', 'Waschlappen', 1),
+	('weed', 'Cannabis', 1),
+	('weizen', 'Weizen', 1),
+	('whisky', 'Whisky', 1)
+;
+
+CREATE TABLE IF NOT EXISTS `nrp_core` (
+	`identifier` VARCHAR(60) NOT NULL,
+	`status` VARCHAR(255) NULL DEFAULT NULL,
+	PRIMARY KEY (`identifier`)
+);
