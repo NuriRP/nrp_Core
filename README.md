@@ -29,8 +29,122 @@
 > - Debug
 > - ESX
 > - Headshot Oneshot
->
-> ***Weiteres Bald verfügbar!***
+> - Kein Motorrad Kick
+> - Taschenlampe bleibt bei Bewegung an
+> - Ragdoll
+> - Kein Fahrzeug umdrehen
+> - Unbegrenzte Ausdauer
+> - Unbegrenzt tauchen
+> - Kein VDM
+> - FPS
+> - Händehoch
+> - Motor
+> - Sitzplatz wechseln
+> - Keine NPCs
+> - Pausemenu Text
+> - HUD Farbe
+> - Keine AFK-Kamera
+> - ESX Animation
+> - Mapclear
+> - Discord Rich Presence
+> - Fahrzeugverleih
+> - PMA-Voice Sprachreichweite
+> - Schutzweste
+> - Medikit
+> - Bandage
+> - Aduty
+> - ID
+> - IDS
+> - Einreise Text
+> - Carry
+> - Geiselnahme
+> - Schnee
+> - Mit Finger zeigen
+> - Verbessertes schleichen
+> - Keine Leben & Panzerungsanzeige
+> - Kein Waffenrad
+> - Tazereffekt
+> - Driftmodus
+> - Sperrzone
+> - Unendlich Muniton
+> - Kein Nachladen
+> - Magazin
+> - Leben und Panzerung speichern
+> - Reperaturkasten
+> - Waschlappen
+> - Blips
+> - Keine Minimap zufuß
+> - Streamermodus
+> - Kabelbinder & Schere
+> - Kein Driveby
+> - Ped
+> - Safezone
+> - Schneebälle
+> - Halloween
+> - Wetter
+> - Hinfallen beim Springen
+> - Im Kofferraum verstecken
+> - Waffenanimation
+> - Brille, Helme & Hüte fallen nicht
+> - Fahrzeug schieben
+> - PMA-Voice nicht verbunden UI
+> - Kein Helm auf Motorrad
+> - Outfit kopieren
+> - Uhrzeit
+> - Gehstock
+> - Routen
+> - LKW Minijob
+> - Glückskekse
+> - Selbstmord
+> - Tempomat
+> - Keine Fahrzeugbelohnungen
+> - Friedliche NPCs
+> - NPC Fahrzeuge abschließen
+> - Keine Regeneration
+> - NPC Fahrzeug Kennzeichen
+> - Cayo Perico
+> - Moneykill
+> - Kill Benachrichtigung
+> - Handysteuer
+> - Kein Waffenschlag
+> - Kampfunfähigkeit
+> - Job Fahrzeuge
+> - Job Waffen
+> - Spieler beigetreten Logs
+> - Spieler verlassen Logs
+> - Chat Logs
+> - Ressource gestartet Logs
+> - Ressource gestoppt Logs
+> - txAdmin Spieler gekickt Logs
+> - txAdmin Spieler verwarnt Logs
+> - txAdmin Spieler gebannt Logs
+> - txAdmin Ankündigung Logs
+> - txAdmin Config geändert Logs
+> - txAdmin Spieler geheilt Logs
+> - txAdmin Server herunterfahren Logs
+> - txAdmin Direktnachricht Logs
+> - Keine Pickups
+> - Easteregg
+> - Easteregg V2
+> - Spieler
+> - Ping
+> - Fahrzeuge
+> - Koordinaten
+> - Weihnachtsbäume
+> - Kein Autoaim
+> - Map Name
+> - Game Typ
+> - Blinker
+> - Echtzeit
+> - Kein Angriff Gehstiel
+> - Carlock
+> - Doorlock
+> - Jointransition
+> - Fahrzeugname
+> - Panicbutton
+> - Bartwuchs
+> - Kaputte Fahrzeuge entfernen
+> - Kein Nebel
 </details>
 
 ---
