@@ -166,6 +166,8 @@
 >
 > [es_extended](https://github.com/esx-framework/esx_core)
 >
+> [oxmysql](https://github.com/overextended/oxmysql)
+>
 > [pma-voice](https://github.com/AvarianKnight/pma-voice)
 >
 > [LegacyFuel](https://github.com/InZidiuZ/LegacyFuel)
