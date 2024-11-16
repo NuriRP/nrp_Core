@@ -162,7 +162,7 @@
 ---
 ## Vorraussetzungen
 <sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß</sup>
-> Game Build **3095**
+> Game Build **3258**
 >
 > [es_extended](https://github.com/esx-framework/esx_core)
 >
