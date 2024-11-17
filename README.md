@@ -198,9 +198,9 @@
 >
 > [Wetter Liste](https://docs.fivem.net/natives/?_0x29B487C359E19889)
 >
-> [Fahrzeug Lsite](https://docs.fivem.net/docs/game-references/vehicle-models/)
+> [Fahrzeug Liste](https://docs.fivem.net/docs/game-references/vehicle-models/)
 >
-> [Fahrzeugklassen Lsite](https://docs.fivem.net/natives/?_0x29439776AAA00A62)
+> [Fahrzeugklassen Liste](https://docs.fivem.net/natives/?_0x29439776AAA00A62)
 >
 > [Tasten Liste](https://docs.fivem.net/docs/game-references/controls/)
 >
