@@ -1,4 +1,4 @@
-# nrp_Core (Preview 1.0.0)
+# nrp_Core (Preview 1.0.0) <sup>Preview 1.1.0 ist blad verfügbar</sup>
 ### Core System basierend auf dem ESX-Framework.
 
 ## Informationen
