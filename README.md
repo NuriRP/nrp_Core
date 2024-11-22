@@ -144,6 +144,9 @@
 > - Bartwuchs
 > - Skinfix
 > - Kaputte Fahrzeuge entfernen
+> - Blacklisted Befehle
+> - Fraktionssperre
+> - Job Tracker
 </details>
 
 ---
