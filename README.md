@@ -35,7 +35,7 @@
 > - Unbegrenzte Ausdauer
 > - Unbegrenzt tauchen
 > - Kein VDM
-> - FPS
+> - FPS Befehl
 > - Händehoch
 > - Motor
 > - Sitzplatz wechseln
@@ -52,8 +52,8 @@
 > - Medikit
 > - Bandage
 > - Aduty
-> - ID
-> - IDS
+> - ID Befehl
+> - IDS Befehl
 > - Einreise Text
 > - Carry
 > - Geiselnahme
@@ -73,7 +73,7 @@
 > - Waschlappen
 > - Blips
 > - Keine Minimap zufuß
-> - Streamermodus
+> - Streamermodus Befehl
 > - Kabelbinder & Schere
 > - Kein Driveby
 > - Ped
@@ -88,13 +88,13 @@
 > - Fahrzeug schieben
 > - PMA-Voice nicht verbunden UI
 > - Kein Helm auf Motorrad
-> - Outfit kopieren
+> - Outfit kopieren Befehl
 > - Uhrzeit
 > - Gehstock
 > - Routen
 > - LKW Minijob
 > - Glückskekse
-> - Selbstmord
+> - Selbstmord Befehl
 > - Tempomat
 > - Keine Fahrzeugbelohnungen
 > - Friedliche NPCs
@@ -125,10 +125,10 @@
 > - Keine Pickups
 > - Easteregg
 > - Easteregg V2
-> - Spieler
-> - Ping
-> - Fahrzeuge
-> - Koordinaten
+> - Spieler Befehl
+> - Ping Befehl
+> - Fahrzeuge Befehl
+> - Koordinaten Befehl
 > - Weihnachtsbäume
 > - Kein Autoaim
 > - Map Name
@@ -139,10 +139,10 @@
 > - Carlock
 > - Doorlock
 > - Jointransition
-> - Fahrzeugname
+> - Fahrzeugname Befehl
 > - Panicbutton
 > - Bartwuchs
-> - Skinfix
+> - Skinfix Befehl
 > - Kaputte Fahrzeuge entfernen
 > - Blacklisted Befehle
 > - Fraktionssperre
