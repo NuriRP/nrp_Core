@@ -161,8 +161,7 @@
 
 ---
 ## Vorraussetzungen
-<sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß</sup>
-<sup>Außerdem stelle bitte sicher, dass alle Ressourcen auf der aktuellsten Version sind</sup>
+<sup>Ohne den Unten genannten Vorraussetzungen funktioniert die Ressource garnicht bzw. nicht ordnungsgemäß. Außerdem stelle bitte sicher, dass alle Ressourcen auf der aktuellsten Version sind</sup>
 > Game Build **3258**
 >
 > [es_extended](https://github.com/esx-framework/esx_core)
