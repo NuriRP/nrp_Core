@@ -168,9 +168,11 @@
 >
 > [oxmysql](https://github.com/overextended/oxmysql)
 >
-> [pma-voice](https://github.com/AvarianKnight/pma-voice)
+> [pma-voice](https://github.com/AvarianKnight/pma-voice)*
 >
-> [LegacyFuel](https://github.com/InZidiuZ/LegacyFuel)
+> [LegacyFuel](https://github.com/InZidiuZ/LegacyFuel)*
+> 
+> <sup>* Abhängig von den aktiviereten Features</sup>
 
 ---
 ## Installation
